@@ -13,13 +13,13 @@
 #import "NSArray+Dictionary.h"
 
 #define	kQCPlugIn_Name			@"CSV Importer"
-#define	kQCPlugIn_Description	@"Imports a CSV text file from a URL and outputs a structure of structures, containing rows of fields.  Local files can be imported by specifying a file:// URL  (Remember that an absolute path will have 3 slashes at its start eg: file:///Users/bill/file.txt)"
+#define	kQCPlugIn_Description	@"Imports a CSV text file from a URL and outputs a structure of structures, containing rows of fields.  Local files can be imported by specifying a file:// URL  (Remember that an absolute path will have 3 slashes at its start eg: file:///Users/bill/file.txt).  The import occurs every time the Update Signal input goes from LOW to HIGH."
 
 
 @implementation CSVImporter
 
 //Here you need to declare the input / output properties as dynamic as Quartz Composer will handle their implementation
-@dynamic inputURL, outputParsed;
+@dynamic inputUpdate, inputURL, outputParsed;
 
 + (NSDictionary*) attributes
 {
@@ -33,6 +33,11 @@
     if([key isEqualToString:@"inputURL"])
         return [NSDictionary dictionaryWithObjectsAndKeys:
                 @"CSV URL", QCPortAttributeNameKey,
+                nil];
+    if([key isEqualToString:@"inputUpdate"])
+        return [NSDictionary dictionaryWithObjectsAndKeys:
+                @"Update Signal", QCPortAttributeNameKey,
+                NO, QCPortAttributeDefaultValueKey,
                 nil];
     if([key isEqualToString:@"outputParsed"])
         return [NSDictionary dictionaryWithObjectsAndKeys:
@@ -102,11 +107,13 @@
 	CGLContextObj cgl_ctx = [context CGLContextObj];
 	*/
     
-    NSStringEncoding encoding;
-    NSString *returnData = [NSString stringWithContentsOfURL:[NSURL URLWithString:self.inputURL] 
+    if ([self didValueForInputKeyChange:@"inputUpdate"] && self.inputUpdate) {
+        NSStringEncoding encoding;
+        NSString *returnData = [NSString stringWithContentsOfURL:[NSURL URLWithString:self.inputURL] 
                                                 usedEncoding:&encoding error:nil];
-    // NSString -> NSArray -> NSDictionary
-    self.outputParsed = [[returnData CSVComponents] indexKeyedDictionary];
+        // NSString -> NSArray -> NSDictionary
+        self.outputParsed = [[returnData CSVComponents] indexKeyedDictionary];
+    }
 
 	return YES;
 }
