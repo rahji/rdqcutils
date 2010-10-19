@@ -1,0 +1,951 @@
+Trd_qc_utils
+v7
+r0
+t309198178.411168
+cCheck dependencies
+cProcessInfoPlistFile /Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/rd_qc_utils.plugin/Contents/Info.plist Info.plist
+cCompileXIB /Users/rduarte/Documents/xcode/rd_qc_utils/English.lproj/Settings.xib
+cProcessPCH /var/folders/bL/bLYjkjRzEgqTQ9kK+k+9EU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/rd_qc_utils_Prefix-giowopqxncoonvanaypybjaiviqb/rd_qc_utils_Prefix.pch.gch rd_qc_utils_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cProcessPCH /var/folders/bL/bLYjkjRzEgqTQ9kK+k+9EU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/rd_qc_utils_Prefix-bemwkygdowictebophqlhfpntgcz/rd_qc_utils_Prefix.pch.gch rd_qc_utils_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cProcessPCH /var/folders/bL/bLYjkjRzEgqTQ9kK+k+9EU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/rd_qc_utils_Prefix-fxzusovqjmgqvxampuqlnswtuzmo/rd_qc_utils_Prefix.pch.gch rd_qc_utils_Prefix.pch normal ppc objective-c com.apple.compilers.gcc.4_2
+cCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/ScaleNumber.o /Users/rduarte/Documents/xcode/rd_qc_utils/ScaleNumber.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/SwapNumbers.o /Users/rduarte/Documents/xcode/rd_qc_utils/SwapNumbers.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/NSString+CHCSVAdditions.o /Users/rduarte/Documents/xcode/rd_qc_utils/NSString+CHCSVAdditions.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/CHCSVSupport.o /Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVSupport.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/NSArray+Dictionary.o /Users/rduarte/Documents/xcode/rd_qc_utils/NSArray+Dictionary.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/NSArray+CHCSVAdditions.o /Users/rduarte/Documents/xcode/rd_qc_utils/NSArray+CHCSVAdditions.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/CHCSVParser.o /Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVParser.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/CHCSVWriter.o /Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVWriter.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/CSVImporter.o /Users/rduarte/Documents/xcode/rd_qc_utils/CSVImporter.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/ScaleNumber.o /Users/rduarte/Documents/xcode/rd_qc_utils/ScaleNumber.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/SwapNumbers.o /Users/rduarte/Documents/xcode/rd_qc_utils/SwapNumbers.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/NSString+CHCSVAdditions.o /Users/rduarte/Documents/xcode/rd_qc_utils/NSString+CHCSVAdditions.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/CHCSVSupport.o /Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVSupport.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/NSArray+Dictionary.o /Users/rduarte/Documents/xcode/rd_qc_utils/NSArray+Dictionary.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/NSArray+CHCSVAdditions.o /Users/rduarte/Documents/xcode/rd_qc_utils/NSArray+CHCSVAdditions.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/CHCSVParser.o /Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVParser.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/CHCSVWriter.o /Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVWriter.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/CSVImporter.o /Users/rduarte/Documents/xcode/rd_qc_utils/CSVImporter.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/rd_qc_utils normal x86_64
+cLd /Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/rd_qc_utils normal i386
+cCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/ScaleNumber.o /Users/rduarte/Documents/xcode/rd_qc_utils/ScaleNumber.m normal ppc objective-c com.apple.compilers.gcc.4_2
+cCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/SwapNumbers.o /Users/rduarte/Documents/xcode/rd_qc_utils/SwapNumbers.m normal ppc objective-c com.apple.compilers.gcc.4_2
+cCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/NSString+CHCSVAdditions.o /Users/rduarte/Documents/xcode/rd_qc_utils/NSString+CHCSVAdditions.m normal ppc objective-c com.apple.compilers.gcc.4_2
+cCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/CHCSVSupport.o /Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVSupport.m normal ppc objective-c com.apple.compilers.gcc.4_2
+cCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/NSArray+Dictionary.o /Users/rduarte/Documents/xcode/rd_qc_utils/NSArray+Dictionary.m normal ppc objective-c com.apple.compilers.gcc.4_2
+cCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/NSArray+CHCSVAdditions.o /Users/rduarte/Documents/xcode/rd_qc_utils/NSArray+CHCSVAdditions.m normal ppc objective-c com.apple.compilers.gcc.4_2
+cCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/CHCSVParser.o /Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVParser.m normal ppc objective-c com.apple.compilers.gcc.4_2
+cCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/CHCSVWriter.o /Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVWriter.m normal ppc objective-c com.apple.compilers.gcc.4_2
+cCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/CSVImporter.o /Users/rduarte/Documents/xcode/rd_qc_utils/CSVImporter.m normal ppc objective-c com.apple.compilers.gcc.4_2
+cLd /Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/rd_qc_utils normal ppc
+cCreateUniversalBinary /Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/rd_qc_utils.plugin/Contents/MacOS/rd_qc_utils normal "x86_64 i386 ppc"
+cGenerateDSYMFile /Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/rd_qc_utils.plugin.dSYM /Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/rd_qc_utils.plugin/Contents/MacOS/rd_qc_utils
+cTouch /Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/rd_qc_utils.plugin
+
+N/Developer/SDKs/MacOSX10.6.sdk
+c000000004C5342BA00000000000000EE
+t1280524986
+s238
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004C46BD4600000000000013E6
+t1279704390
+s5094
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/OpenGL.framework/Headers/CGLMacro.h
+c000000004C44D424000000000001FFC8
+t1279579172
+s131016
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Quartz.framework/Headers/Quartz.h
+c000000004BE54CE90000000000000124
+t1273318633
+s292
+
+N/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000004A1F2D63000000000000A5E0
+t1243557219
+s42464
+
+N/System/Library/Frameworks/Quartz.framework/Quartz
+c000000004AD870D6000000000000A5F0
+t1255698646
+s42480
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/../junk/English.lproj/Settings.xib
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/CHCSV.h
+c000000004CAE305D00000000000004D1
+t1286484061
+s1233
+i"CHCSVParser.h"
+i"CHCSVWriter.h"
+i"NSArray+CHCSVAdditions.h"
+i"NSString+CHCSVAdditions.h"
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVParser.h
+c000000004CAE305D0000000000000A18
+t1286484061
+s2584
+i<Foundation/Foundation.h>
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVParser.m
+c000000004CAE305D000000000000314E
+t1286484061
+s12622
+i"CHCSVParser.h"
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVSupport.h
+c000000004CAE305D0000000000000580
+t1286484061
+s1408
+i<Foundation/Foundation.h>
+i"CHCSVParser.h"
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVSupport.m
+c000000004CAE305D00000000000007D8
+t1286484061
+s2008
+i"CHCSVSupport.h"
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVWriter.h
+c000000004CAE305D0000000000000662
+t1286484061
+s1634
+i<Foundation/Foundation.h>
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVWriter.m
+c000000004CAE305D0000000000000F8B
+t1286484061
+s3979
+i"CHCSVWriter.h"
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/CSVImporter.h
+c000000004CBD3B160000000000000236
+t1287469846
+s566
+i<Quartz/Quartz.h>
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/CSVImporter.m
+c000000004CBDC5DF00000000000010C9
+t1287505375
+s4297
+i<OpenGL/CGLMacro.h>
+i"CSVImporter.h"
+i"CHCSV.h"
+i"NSArray+Dictionary.h"
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/English.lproj
+c000000004CBA90860000000000000066
+t1287295110
+s102
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/English.lproj/Settings.xib
+c000000004CB60A770000000000005BC0
+t1286998647
+s23488
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/NSArray+CHCSVAdditions.h
+c000000004CAE305D00000000000006E4
+t1286484061
+s1764
+i<Foundation/Foundation.h>
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/NSArray+CHCSVAdditions.m
+c000000004CAE305D0000000000000ECD
+t1286484061
+s3789
+i"NSArray+CHCSVAdditions.h"
+i"CHCSVParser.h"
+i"CHCSVWriter.h"
+i"CHCSVSupport.h"
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/NSArray+Dictionary.h
+c000000004CBDBC650000000000000146
+t1287502949
+s326
+i<Foundation/Foundation.h>
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/NSArray+Dictionary.m
+c000000004CBDBC6500000000000002E2
+t1287502949
+s738
+i"NSArray+Dictionary.h"
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/NSString+CHCSVAdditions.h
+c000000004CAE305D00000000000004DA
+t1286484061
+s1242
+i<Foundation/Foundation.h>
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/NSString+CHCSVAdditions.m
+c000000004CAE305D00000000000006B6
+t1286484061
+s1718
+i"NSString+CHCSVAdditions.h"
+i"CHCSVParser.h"
+i"CHCSVSupport.h"
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/ScaleNumber.h
+c000000004CBD3B160000000000000322
+t1287469846
+s802
+i<Quartz/Quartz.h>
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/ScaleNumber.m
+c000000004CBDBF190000000000001BCB
+t1287503641
+s7115
+i<OpenGL/CGLMacro.h>
+i"ScaleNumber.h"
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/SwapNumbers.h
+c000000004CBD3F520000000000000288
+t1287470930
+s648
+i<Quartz/Quartz.h>
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/SwapNumbers.m
+c000000004CBDBF19000000000000121D
+t1287503641
+s4637
+i<OpenGL/CGLMacro.h>
+i"SwapNumbers.h"
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/rd_qc_utils.plugin
+t1287505378
+s102
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/rd_qc_utils.plugin.dSYM
+t1287505378
+s102
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/rd_qc_utils.plugin/Contents/Info.plist
+t1287469908
+s906
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/rd_qc_utils.plugin/Contents/MacOS/rd_qc_utils
+t1287505378
+s183544
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/rd_qc_utils.plugin/Contents/Resources/English.lproj
+t1286998707
+s102
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/rd_qc_utils.plugin/Contents/Resources/English.lproj/Settings.nib
+t1287295256
+s6404
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/CHCSVParser.o
+t1287469920
+s31468
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/CHCSVSupport.o
+t1287469919
+s13328
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/CHCSVWriter.o
+t1287469919
+s17080
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/CSVImporter.o
+t1287505376
+s14356
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/NSArray+CHCSVAdditions.o
+t1287469919
+s14624
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/NSArray+Dictionary.o
+t1287502950
+s7268
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/NSString+CHCSVAdditions.o
+t1287469919
+s8080
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/ScaleNumber.o
+t1287503642
+s27132
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/SwapNumbers.o
+t1287503642
+s15280
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/junkPlugIn.o
+t2
+s0
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/rd_qc_utils
+t1287505377
+s51608
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/rd_qc_utils.LinkFileList
+c000000004CBD3B170000000000000496
+t1287469847
+s1174
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/rd_qc_utilsPlugIn.o
+t2
+s0
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/CHCSVParser.o
+t1287469934
+s33176
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/CHCSVSupport.o
+t1287469933
+s13692
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/CHCSVWriter.o
+t1287469934
+s17224
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/CSVImporter.o
+t1287505377
+s14804
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/NSArray+CHCSVAdditions.o
+t1287469933
+s15000
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/NSArray+Dictionary.o
+t1287502951
+s7468
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/NSString+CHCSVAdditions.o
+t1287469933
+s8180
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/ScaleNumber.o
+t1287503642
+s28084
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/SwapNumbers.o
+t1287503643
+s16124
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/junkPlugIn.o
+t2
+s0
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/rd_qc_utils
+t1287505378
+s56568
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/rd_qc_utils.LinkFileList
+c000000004CBD3B17000000000000048D
+t1287469847
+s1165
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/rd_qc_utilsPlugIn.o
+t2
+s0
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/CHCSVParser.o
+t1287469858
+s45452
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/CHCSVSupport.o
+t1287469857
+s20500
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/CHCSVWriter.o
+t1287469858
+s23116
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/CSVImporter.o
+t1287505376
+s19240
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/NSArray+CHCSVAdditions.o
+t1287469857
+s18656
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/NSArray+Dictionary.o
+t1287502949
+s8540
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/NSString+CHCSVAdditions.o
+t1287469857
+s9780
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/ScaleNumber.o
+t1287503641
+s35640
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/SwapNumbers.o
+t1287503641
+s20644
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/junkPlugIn.o
+t2
+s0
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/rd_qc_utils
+t1287505377
+s65952
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/rd_qc_utils.LinkFileList
+c000000004CBD3B1700000000000004A8
+t1287469847
+s1192
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/rd_qc_utilsPlugIn.o
+t2
+s0
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/junkPlugIn.h
+c000000004CBD3854000000000000022D
+t1287469140
+s557
+i<Quartz/Quartz.h>
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/junkPlugIn.m
+c000000004CBD387F0000000000000FA2
+t1287469183
+s4002
+i<OpenGL/CGLMacro.h>
+i"junkPlugIn.h"
+i"CHCSV.h"
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/rd_qc_utilsPlugIn.h
+c000000004CB3A5A600000000000002D1
+t1286841766
+s721
+i<Quartz/Quartz.h>
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/rd_qc_utilsPlugIn.m
+c000000004CB3A56E0000000000001215
+t1286841710
+s4629
+i<OpenGL/CGLMacro.h>
+i"rd_qc_utilsPlugIn.h"
+
+N/Users/rduarte/Documents/xcode/rd_qc_utils/rd_qc_utils_Prefix.pch
+c000000004CB3A56E0000000000000032
+t1286841710
+s50
+i<Quartz/Quartz.h>
+
+N/var/folders/bL/bLYjkjRzEgqTQ9kK+k+9EU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/rd_qc_utils_Prefix-bemwkygdowictebophqlhfpntgcz/rd_qc_utils_Prefix.pch.gch
+t1286864371
+s57767344
+
+N/var/folders/bL/bLYjkjRzEgqTQ9kK+k+9EU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/rd_qc_utils_Prefix-fxzusovqjmgqvxampuqlnswtuzmo/rd_qc_utils_Prefix.pch.gch
+t1286864373
+s54990032
+
+N/var/folders/bL/bLYjkjRzEgqTQ9kK+k+9EU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/rd_qc_utils_Prefix-giowopqxncoonvanaypybjaiviqb/rd_qc_utils_Prefix.pch.gch
+t1286864368
+s55141776
+
+NInfo.plist
+c000000004CBD3B5300000000000003A4
+t1287469907
+s932
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies309198175#309198175#0(0"0(0#1#0"32651522506817640#0"0#
+
+CCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/CHCSVParser.o /Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVParser.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s309162719.346366
+e309162720.262622
+r1
+xCompileC
+xbuild/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/CHCSVParser.o
+x/Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVParser.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@64"Compile /Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVParser.m309162719#309162720#0(0"0(0#0#56"/Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVParser.m8707427840#1173"    cd /Users/rduarte/Documents/xcode/rd_qc_utils    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/rd_qc_utils.hmap -F/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/include -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources/i386 -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources -include /var/folders/bL/bLYjkjRzEgqTQ9kK+k+9EU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/rd_qc_utils_Prefix-bemwkygdowictebophqlhfpntgcz/rd_qc_utils_Prefix.pch -c /Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVParser.m -o /Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/CHCSVParser.o0#
+
+CCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/CHCSVSupport.o /Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVSupport.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s309162718.481936
+e309162719.103718
+r1
+xCompileC
+xbuild/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/CHCSVSupport.o
+x/Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVSupport.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@65"Compile /Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVSupport.m309162718#309162719#0(0"0(0#0#57"/Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVSupport.m8739272992#1175"    cd /Users/rduarte/Documents/xcode/rd_qc_utils    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/rd_qc_utils.hmap -F/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/include -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources/i386 -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources -include /var/folders/bL/bLYjkjRzEgqTQ9kK+k+9EU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/rd_qc_utils_Prefix-bemwkygdowictebophqlhfpntgcz/rd_qc_utils_Prefix.pch -c /Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVSupport.m -o /Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/CHCSVSupport.o0#
+
+CCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/CHCSVWriter.o /Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVWriter.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s309162719.587383
+e309162719.942472
+r1
+xCompileC
+xbuild/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/CHCSVWriter.o
+x/Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVWriter.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@64"Compile /Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVWriter.m309162719#309162719#0(0"0(0#0#56"/Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVWriter.m8736674784#1173"    cd /Users/rduarte/Documents/xcode/rd_qc_utils    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/rd_qc_utils.hmap -F/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/include -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources/i386 -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources -include /var/folders/bL/bLYjkjRzEgqTQ9kK+k+9EU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/rd_qc_utils_Prefix-bemwkygdowictebophqlhfpntgcz/rd_qc_utils_Prefix.pch -c /Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVWriter.m -o /Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/CHCSVWriter.o0#
+
+CCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/CSVImporter.o /Users/rduarte/Documents/xcode/rd_qc_utils/CSVImporter.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s309198175.895646
+e309198176.568567
+r1
+xCompileC
+xbuild/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/CSVImporter.o
+x/Users/rduarte/Documents/xcode/rd_qc_utils/CSVImporter.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@64"Compile /Users/rduarte/Documents/xcode/rd_qc_utils/CSVImporter.m309198175#309198176#0(0"0(0#0#56"/Users/rduarte/Documents/xcode/rd_qc_utils/CSVImporter.m8620602656#1173"    cd /Users/rduarte/Documents/xcode/rd_qc_utils    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/rd_qc_utils.hmap -F/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/include -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources/i386 -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources -include /var/folders/bL/bLYjkjRzEgqTQ9kK+k+9EU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/rd_qc_utils_Prefix-bemwkygdowictebophqlhfpntgcz/rd_qc_utils_Prefix.pch -c /Users/rduarte/Documents/xcode/rd_qc_utils/CSVImporter.m -o /Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/CSVImporter.o0#
+
+CCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/NSArray+CHCSVAdditions.o /Users/rduarte/Documents/xcode/rd_qc_utils/NSArray+CHCSVAdditions.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s309162719.103800
+e309162719.587132
+r1
+xCompileC
+xbuild/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/NSArray+CHCSVAdditions.o
+x/Users/rduarte/Documents/xcode/rd_qc_utils/NSArray+CHCSVAdditions.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@75"Compile /Users/rduarte/Documents/xcode/rd_qc_utils/NSArray+CHCSVAdditions.m309162719#309162719#0(0"0(0#0#67"/Users/rduarte/Documents/xcode/rd_qc_utils/NSArray+CHCSVAdditions.m8625583616#1195"    cd /Users/rduarte/Documents/xcode/rd_qc_utils    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/rd_qc_utils.hmap -F/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/include -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources/i386 -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources -include /var/folders/bL/bLYjkjRzEgqTQ9kK+k+9EU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/rd_qc_utils_Prefix-bemwkygdowictebophqlhfpntgcz/rd_qc_utils_Prefix.pch -c /Users/rduarte/Documents/xcode/rd_qc_utils/NSArray+CHCSVAdditions.m -o /Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/NSArray+CHCSVAdditions.o0#
+
+CCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/NSArray+Dictionary.o /Users/rduarte/Documents/xcode/rd_qc_utils/NSArray+Dictionary.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s309195750.065616
+e309195750.322838
+r1
+xCompileC
+xbuild/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/NSArray+Dictionary.o
+x/Users/rduarte/Documents/xcode/rd_qc_utils/NSArray+Dictionary.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@71"Compile /Users/rduarte/Documents/xcode/rd_qc_utils/NSArray+Dictionary.m309195750#309195750#0(0"0(0#0#63"/Users/rduarte/Documents/xcode/rd_qc_utils/NSArray+Dictionary.m8623107232#1187"    cd /Users/rduarte/Documents/xcode/rd_qc_utils    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/rd_qc_utils.hmap -F/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/include -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources/i386 -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources -include /var/folders/bL/bLYjkjRzEgqTQ9kK+k+9EU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/rd_qc_utils_Prefix-bemwkygdowictebophqlhfpntgcz/rd_qc_utils_Prefix.pch -c /Users/rduarte/Documents/xcode/rd_qc_utils/NSArray+Dictionary.m -o /Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/NSArray+Dictionary.o0#
+
+CCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/NSString+CHCSVAdditions.o /Users/rduarte/Documents/xcode/rd_qc_utils/NSString+CHCSVAdditions.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s309162717.932750
+e309162719.102460
+r1
+xCompileC
+xbuild/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/NSString+CHCSVAdditions.o
+x/Users/rduarte/Documents/xcode/rd_qc_utils/NSString+CHCSVAdditions.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@76"Compile /Users/rduarte/Documents/xcode/rd_qc_utils/NSString+CHCSVAdditions.m309162717#309162719#0(0"0(0#0#68"/Users/rduarte/Documents/xcode/rd_qc_utils/NSString+CHCSVAdditions.m8735946912#1197"    cd /Users/rduarte/Documents/xcode/rd_qc_utils    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/rd_qc_utils.hmap -F/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/include -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources/i386 -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources -include /var/folders/bL/bLYjkjRzEgqTQ9kK+k+9EU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/rd_qc_utils_Prefix-bemwkygdowictebophqlhfpntgcz/rd_qc_utils_Prefix.pch -c /Users/rduarte/Documents/xcode/rd_qc_utils/NSString+CHCSVAdditions.m -o /Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/NSString+CHCSVAdditions.o0#
+
+CCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/ScaleNumber.o /Users/rduarte/Documents/xcode/rd_qc_utils/ScaleNumber.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s309196441.786912
+e309196442.299300
+r1
+xCompileC
+xbuild/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/ScaleNumber.o
+x/Users/rduarte/Documents/xcode/rd_qc_utils/ScaleNumber.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@64"Compile /Users/rduarte/Documents/xcode/rd_qc_utils/ScaleNumber.m309196441#309196442#0(0"0(0#0#56"/Users/rduarte/Documents/xcode/rd_qc_utils/ScaleNumber.m8626851808#1173"    cd /Users/rduarte/Documents/xcode/rd_qc_utils    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/rd_qc_utils.hmap -F/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/include -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources/i386 -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources -include /var/folders/bL/bLYjkjRzEgqTQ9kK+k+9EU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/rd_qc_utils_Prefix-bemwkygdowictebophqlhfpntgcz/rd_qc_utils_Prefix.pch -c /Users/rduarte/Documents/xcode/rd_qc_utils/ScaleNumber.m -o /Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/ScaleNumber.o0#
+
+CCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/SwapNumbers.o /Users/rduarte/Documents/xcode/rd_qc_utils/SwapNumbers.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s309196442.127288
+e309196442.475236
+r1
+xCompileC
+xbuild/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/SwapNumbers.o
+x/Users/rduarte/Documents/xcode/rd_qc_utils/SwapNumbers.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@64"Compile /Users/rduarte/Documents/xcode/rd_qc_utils/SwapNumbers.m309196442#309196442#0(0"0(0#0#56"/Users/rduarte/Documents/xcode/rd_qc_utils/SwapNumbers.m8626991488#1173"    cd /Users/rduarte/Documents/xcode/rd_qc_utils    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/rd_qc_utils.hmap -F/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/include -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources/i386 -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources -include /var/folders/bL/bLYjkjRzEgqTQ9kK+k+9EU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/rd_qc_utils_Prefix-bemwkygdowictebophqlhfpntgcz/rd_qc_utils_Prefix.pch -c /Users/rduarte/Documents/xcode/rd_qc_utils/SwapNumbers.m -o /Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/SwapNumbers.o0#
+
+CCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/junkPlugIn.o /Users/rduarte/Documents/xcode/rd_qc_utils/junkPlugIn.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/rd_qc_utilsPlugIn.o /Users/rduarte/Documents/xcode/rd_qc_utils/rd_qc_utilsPlugIn.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/CHCSVParser.o /Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVParser.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s309162733.600469
+e309162734.243678
+r1
+xCompileC
+xbuild/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/CHCSVParser.o
+x/Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVParser.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@64"Compile /Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVParser.m309162733#309162734#0(0"0(0#0#56"/Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVParser.m8738313440#1180"    cd /Users/rduarte/Documents/xcode/rd_qc_utils    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -mtune=G5 -mmacosx-version-min=10.6 -gdwarf-2 -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/rd_qc_utils.hmap -F/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/include -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources/ppc -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources -include /var/folders/bL/bLYjkjRzEgqTQ9kK+k+9EU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/rd_qc_utils_Prefix-fxzusovqjmgqvxampuqlnswtuzmo/rd_qc_utils_Prefix.pch -c /Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVParser.m -o /Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/CHCSVParser.o0#
+
+CCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/CHCSVSupport.o /Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVSupport.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s309162730.490109
+e309162733.323197
+r1
+xCompileC
+xbuild/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/CHCSVSupport.o
+x/Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVSupport.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@65"Compile /Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVSupport.m309162730#309162733#0(0"0(0#0#57"/Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVSupport.m8687309376#1182"    cd /Users/rduarte/Documents/xcode/rd_qc_utils    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -mtune=G5 -mmacosx-version-min=10.6 -gdwarf-2 -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/rd_qc_utils.hmap -F/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/include -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources/ppc -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources -include /var/folders/bL/bLYjkjRzEgqTQ9kK+k+9EU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/rd_qc_utils_Prefix-fxzusovqjmgqvxampuqlnswtuzmo/rd_qc_utils_Prefix.pch -c /Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVSupport.m -o /Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/CHCSVSupport.o0#
+
+CCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/CHCSVWriter.o /Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVWriter.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s309162733.638091
+e309162734.114659
+r1
+xCompileC
+xbuild/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/CHCSVWriter.o
+x/Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVWriter.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@64"Compile /Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVWriter.m309162733#309162734#0(0"0(0#0#56"/Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVWriter.m8737505728#1180"    cd /Users/rduarte/Documents/xcode/rd_qc_utils    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -mtune=G5 -mmacosx-version-min=10.6 -gdwarf-2 -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/rd_qc_utils.hmap -F/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/include -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources/ppc -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources -include /var/folders/bL/bLYjkjRzEgqTQ9kK+k+9EU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/rd_qc_utils_Prefix-fxzusovqjmgqvxampuqlnswtuzmo/rd_qc_utils_Prefix.pch -c /Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVWriter.m -o /Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/CHCSVWriter.o0#
+
+CCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/CSVImporter.o /Users/rduarte/Documents/xcode/rd_qc_utils/CSVImporter.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s309198177.206890
+e309198177.882045
+r1
+xCompileC
+xbuild/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/CSVImporter.o
+x/Users/rduarte/Documents/xcode/rd_qc_utils/CSVImporter.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@64"Compile /Users/rduarte/Documents/xcode/rd_qc_utils/CSVImporter.m309198177#309198177#0(0"0(0#0#56"/Users/rduarte/Documents/xcode/rd_qc_utils/CSVImporter.m8601131776#1180"    cd /Users/rduarte/Documents/xcode/rd_qc_utils    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -mtune=G5 -mmacosx-version-min=10.6 -gdwarf-2 -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/rd_qc_utils.hmap -F/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/include -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources/ppc -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources -include /var/folders/bL/bLYjkjRzEgqTQ9kK+k+9EU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/rd_qc_utils_Prefix-fxzusovqjmgqvxampuqlnswtuzmo/rd_qc_utils_Prefix.pch -c /Users/rduarte/Documents/xcode/rd_qc_utils/CSVImporter.m -o /Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/CSVImporter.o0#
+
+CCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/NSArray+CHCSVAdditions.o /Users/rduarte/Documents/xcode/rd_qc_utils/NSArray+CHCSVAdditions.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s309162733.323310
+e309162733.637990
+r1
+xCompileC
+xbuild/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/NSArray+CHCSVAdditions.o
+x/Users/rduarte/Documents/xcode/rd_qc_utils/NSArray+CHCSVAdditions.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@75"Compile /Users/rduarte/Documents/xcode/rd_qc_utils/NSArray+CHCSVAdditions.m309162733#309162733#0(0"0(0#0#67"/Users/rduarte/Documents/xcode/rd_qc_utils/NSArray+CHCSVAdditions.m8673192608#1202"    cd /Users/rduarte/Documents/xcode/rd_qc_utils    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -mtune=G5 -mmacosx-version-min=10.6 -gdwarf-2 -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/rd_qc_utils.hmap -F/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/include -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources/ppc -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources -include /var/folders/bL/bLYjkjRzEgqTQ9kK+k+9EU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/rd_qc_utils_Prefix-fxzusovqjmgqvxampuqlnswtuzmo/rd_qc_utils_Prefix.pch -c /Users/rduarte/Documents/xcode/rd_qc_utils/NSArray+CHCSVAdditions.m -o /Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/NSArray+CHCSVAdditions.o0#
+
+CCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/NSArray+Dictionary.o /Users/rduarte/Documents/xcode/rd_qc_utils/NSArray+Dictionary.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s309195750.986316
+e309195751.179840
+r1
+xCompileC
+xbuild/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/NSArray+Dictionary.o
+x/Users/rduarte/Documents/xcode/rd_qc_utils/NSArray+Dictionary.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@71"Compile /Users/rduarte/Documents/xcode/rd_qc_utils/NSArray+Dictionary.m309195750#309195751#0(0"0(0#0#63"/Users/rduarte/Documents/xcode/rd_qc_utils/NSArray+Dictionary.m8594681024#1194"    cd /Users/rduarte/Documents/xcode/rd_qc_utils    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -mtune=G5 -mmacosx-version-min=10.6 -gdwarf-2 -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/rd_qc_utils.hmap -F/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/include -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources/ppc -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources -include /var/folders/bL/bLYjkjRzEgqTQ9kK+k+9EU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/rd_qc_utils_Prefix-fxzusovqjmgqvxampuqlnswtuzmo/rd_qc_utils_Prefix.pch -c /Users/rduarte/Documents/xcode/rd_qc_utils/NSArray+Dictionary.m -o /Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/NSArray+Dictionary.o0#
+
+CCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/NSString+CHCSVAdditions.o /Users/rduarte/Documents/xcode/rd_qc_utils/NSString+CHCSVAdditions.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s309162729.317191
+e309162733.317784
+r1
+xCompileC
+xbuild/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/NSString+CHCSVAdditions.o
+x/Users/rduarte/Documents/xcode/rd_qc_utils/NSString+CHCSVAdditions.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@76"Compile /Users/rduarte/Documents/xcode/rd_qc_utils/NSString+CHCSVAdditions.m309162729#309162733#0(0"0(0#0#68"/Users/rduarte/Documents/xcode/rd_qc_utils/NSString+CHCSVAdditions.m8687946624#1204"    cd /Users/rduarte/Documents/xcode/rd_qc_utils    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -mtune=G5 -mmacosx-version-min=10.6 -gdwarf-2 -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/rd_qc_utils.hmap -F/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/include -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources/ppc -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources -include /var/folders/bL/bLYjkjRzEgqTQ9kK+k+9EU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/rd_qc_utils_Prefix-fxzusovqjmgqvxampuqlnswtuzmo/rd_qc_utils_Prefix.pch -c /Users/rduarte/Documents/xcode/rd_qc_utils/NSString+CHCSVAdditions.m -o /Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/NSString+CHCSVAdditions.o0#
+
+CCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/ScaleNumber.o /Users/rduarte/Documents/xcode/rd_qc_utils/ScaleNumber.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s309196442.475347
+e309196442.838670
+r1
+xCompileC
+xbuild/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/ScaleNumber.o
+x/Users/rduarte/Documents/xcode/rd_qc_utils/ScaleNumber.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@64"Compile /Users/rduarte/Documents/xcode/rd_qc_utils/ScaleNumber.m309196442#309196442#0(0"0(0#0#56"/Users/rduarte/Documents/xcode/rd_qc_utils/ScaleNumber.m8628549248#1180"    cd /Users/rduarte/Documents/xcode/rd_qc_utils    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -mtune=G5 -mmacosx-version-min=10.6 -gdwarf-2 -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/rd_qc_utils.hmap -F/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/include -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources/ppc -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources -include /var/folders/bL/bLYjkjRzEgqTQ9kK+k+9EU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/rd_qc_utils_Prefix-fxzusovqjmgqvxampuqlnswtuzmo/rd_qc_utils_Prefix.pch -c /Users/rduarte/Documents/xcode/rd_qc_utils/ScaleNumber.m -o /Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/ScaleNumber.o0#
+
+CCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/SwapNumbers.o /Users/rduarte/Documents/xcode/rd_qc_utils/SwapNumbers.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s309196442.657823
+e309196443.085147
+r1
+xCompileC
+xbuild/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/SwapNumbers.o
+x/Users/rduarte/Documents/xcode/rd_qc_utils/SwapNumbers.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@64"Compile /Users/rduarte/Documents/xcode/rd_qc_utils/SwapNumbers.m309196442#309196443#0(0"0(0#0#56"/Users/rduarte/Documents/xcode/rd_qc_utils/SwapNumbers.m8626974240#1180"    cd /Users/rduarte/Documents/xcode/rd_qc_utils    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -mtune=G5 -mmacosx-version-min=10.6 -gdwarf-2 -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/rd_qc_utils.hmap -F/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/include -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources/ppc -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources -include /var/folders/bL/bLYjkjRzEgqTQ9kK+k+9EU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/rd_qc_utils_Prefix-fxzusovqjmgqvxampuqlnswtuzmo/rd_qc_utils_Prefix.pch -c /Users/rduarte/Documents/xcode/rd_qc_utils/SwapNumbers.m -o /Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/SwapNumbers.o0#
+
+CCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/junkPlugIn.o /Users/rduarte/Documents/xcode/rd_qc_utils/junkPlugIn.m normal ppc objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/rd_qc_utilsPlugIn.o /Users/rduarte/Documents/xcode/rd_qc_utils/rd_qc_utilsPlugIn.m normal ppc objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/CHCSVParser.o /Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVParser.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s309162657.729419
+e309162658.523889
+r1
+xCompileC
+xbuild/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/CHCSVParser.o
+x/Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVParser.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@64"Compile /Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVParser.m309162657#309162658#0(0"0(0#0#56"/Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVParser.m8737883744#1179"    cd /Users/rduarte/Documents/xcode/rd_qc_utils    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/rd_qc_utils.hmap -F/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/include -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources/x86_64 -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources -include /var/folders/bL/bLYjkjRzEgqTQ9kK+k+9EU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/rd_qc_utils_Prefix-giowopqxncoonvanaypybjaiviqb/rd_qc_utils_Prefix.pch -c /Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVParser.m -o /Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/CHCSVParser.o0#
+
+CCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/CHCSVSupport.o /Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVSupport.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s309162656.090068
+e309162657.465974
+r1
+xCompileC
+xbuild/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/CHCSVSupport.o
+x/Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVSupport.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@65"Compile /Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVSupport.m309162656#309162657#0(0"0(0#0#57"/Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVSupport.m8739339936#1181"    cd /Users/rduarte/Documents/xcode/rd_qc_utils    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/rd_qc_utils.hmap -F/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/include -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources/x86_64 -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources -include /var/folders/bL/bLYjkjRzEgqTQ9kK+k+9EU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/rd_qc_utils_Prefix-giowopqxncoonvanaypybjaiviqb/rd_qc_utils_Prefix.pch -c /Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVSupport.m -o /Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/CHCSVSupport.o0#
+
+CCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/CHCSVWriter.o /Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVWriter.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s309162657.785432
+e309162658.263633
+r1
+xCompileC
+xbuild/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/CHCSVWriter.o
+x/Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVWriter.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@64"Compile /Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVWriter.m309162657#309162658#0(0"0(0#0#56"/Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVWriter.m8718390816#1179"    cd /Users/rduarte/Documents/xcode/rd_qc_utils    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/rd_qc_utils.hmap -F/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/include -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources/x86_64 -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources -include /var/folders/bL/bLYjkjRzEgqTQ9kK+k+9EU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/rd_qc_utils_Prefix-giowopqxncoonvanaypybjaiviqb/rd_qc_utils_Prefix.pch -c /Users/rduarte/Documents/xcode/rd_qc_utils/CHCSVWriter.m -o /Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/CHCSVWriter.o0#
+
+CCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/CSVImporter.o /Users/rduarte/Documents/xcode/rd_qc_utils/CSVImporter.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s309198175.857265
+e309198176.554853
+r1
+xCompileC
+xbuild/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/CSVImporter.o
+x/Users/rduarte/Documents/xcode/rd_qc_utils/CSVImporter.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@64"Compile /Users/rduarte/Documents/xcode/rd_qc_utils/CSVImporter.m309198175#309198176#0(0"0(0#0#56"/Users/rduarte/Documents/xcode/rd_qc_utils/CSVImporter.m7886488416478786560#1179"    cd /Users/rduarte/Documents/xcode/rd_qc_utils    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/rd_qc_utils.hmap -F/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/include -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources/x86_64 -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources -include /var/folders/bL/bLYjkjRzEgqTQ9kK+k+9EU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/rd_qc_utils_Prefix-giowopqxncoonvanaypybjaiviqb/rd_qc_utils_Prefix.pch -c /Users/rduarte/Documents/xcode/rd_qc_utils/CSVImporter.m -o /Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/CSVImporter.o0#
+
+CCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/NSArray+CHCSVAdditions.o /Users/rduarte/Documents/xcode/rd_qc_utils/NSArray+CHCSVAdditions.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s309162657.466084
+e309162657.729307
+r1
+xCompileC
+xbuild/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/NSArray+CHCSVAdditions.o
+x/Users/rduarte/Documents/xcode/rd_qc_utils/NSArray+CHCSVAdditions.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@75"Compile /Users/rduarte/Documents/xcode/rd_qc_utils/NSArray+CHCSVAdditions.m309162657#309162657#0(0"0(0#0#67"/Users/rduarte/Documents/xcode/rd_qc_utils/NSArray+CHCSVAdditions.m8739593664#1201"    cd /Users/rduarte/Documents/xcode/rd_qc_utils    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/rd_qc_utils.hmap -F/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/include -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources/x86_64 -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources -include /var/folders/bL/bLYjkjRzEgqTQ9kK+k+9EU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/rd_qc_utils_Prefix-giowopqxncoonvanaypybjaiviqb/rd_qc_utils_Prefix.pch -c /Users/rduarte/Documents/xcode/rd_qc_utils/NSArray+CHCSVAdditions.m -o /Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/NSArray+CHCSVAdditions.o0#
+
+CCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/NSArray+Dictionary.o /Users/rduarte/Documents/xcode/rd_qc_utils/NSArray+Dictionary.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s309195749.394720
+e309195749.719557
+r1
+xCompileC
+xbuild/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/NSArray+Dictionary.o
+x/Users/rduarte/Documents/xcode/rd_qc_utils/NSArray+Dictionary.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@71"Compile /Users/rduarte/Documents/xcode/rd_qc_utils/NSArray+Dictionary.m309195749#309195749#0(0"0(0#0#63"/Users/rduarte/Documents/xcode/rd_qc_utils/NSArray+Dictionary.m8620262208#1193"    cd /Users/rduarte/Documents/xcode/rd_qc_utils    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/rd_qc_utils.hmap -F/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/include -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources/x86_64 -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources -include /var/folders/bL/bLYjkjRzEgqTQ9kK+k+9EU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/rd_qc_utils_Prefix-giowopqxncoonvanaypybjaiviqb/rd_qc_utils_Prefix.pch -c /Users/rduarte/Documents/xcode/rd_qc_utils/NSArray+Dictionary.m -o /Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/NSArray+Dictionary.o0#
+
+CCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/NSString+CHCSVAdditions.o /Users/rduarte/Documents/xcode/rd_qc_utils/NSString+CHCSVAdditions.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s309162654.686056
+e309162657.427547
+r1
+xCompileC
+xbuild/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/NSString+CHCSVAdditions.o
+x/Users/rduarte/Documents/xcode/rd_qc_utils/NSString+CHCSVAdditions.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@76"Compile /Users/rduarte/Documents/xcode/rd_qc_utils/NSString+CHCSVAdditions.m309162654#309162657#0(0"0(0#0#68"/Users/rduarte/Documents/xcode/rd_qc_utils/NSString+CHCSVAdditions.m8738980864#1203"    cd /Users/rduarte/Documents/xcode/rd_qc_utils    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/rd_qc_utils.hmap -F/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/include -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources/x86_64 -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources -include /var/folders/bL/bLYjkjRzEgqTQ9kK+k+9EU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/rd_qc_utils_Prefix-giowopqxncoonvanaypybjaiviqb/rd_qc_utils_Prefix.pch -c /Users/rduarte/Documents/xcode/rd_qc_utils/NSString+CHCSVAdditions.m -o /Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/NSString+CHCSVAdditions.o0#
+
+CCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/ScaleNumber.o /Users/rduarte/Documents/xcode/rd_qc_utils/ScaleNumber.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s309196441.371024
+e309196441.786720
+r1
+xCompileC
+xbuild/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/ScaleNumber.o
+x/Users/rduarte/Documents/xcode/rd_qc_utils/ScaleNumber.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@64"Compile /Users/rduarte/Documents/xcode/rd_qc_utils/ScaleNumber.m309196441#309196441#0(0"0(0#0#56"/Users/rduarte/Documents/xcode/rd_qc_utils/ScaleNumber.m8628397376#1179"    cd /Users/rduarte/Documents/xcode/rd_qc_utils    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/rd_qc_utils.hmap -F/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/include -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources/x86_64 -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources -include /var/folders/bL/bLYjkjRzEgqTQ9kK+k+9EU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/rd_qc_utils_Prefix-giowopqxncoonvanaypybjaiviqb/rd_qc_utils_Prefix.pch -c /Users/rduarte/Documents/xcode/rd_qc_utils/ScaleNumber.m -o /Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/ScaleNumber.o0#
+
+CCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/SwapNumbers.o /Users/rduarte/Documents/xcode/rd_qc_utils/SwapNumbers.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s309196441.371955
+e309196441.729022
+r1
+xCompileC
+xbuild/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/SwapNumbers.o
+x/Users/rduarte/Documents/xcode/rd_qc_utils/SwapNumbers.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@64"Compile /Users/rduarte/Documents/xcode/rd_qc_utils/SwapNumbers.m309196441#309196441#0(0"0(0#0#56"/Users/rduarte/Documents/xcode/rd_qc_utils/SwapNumbers.m8628420960#1179"    cd /Users/rduarte/Documents/xcode/rd_qc_utils    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/rd_qc_utils.hmap -F/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/include -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources/x86_64 -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources -include /var/folders/bL/bLYjkjRzEgqTQ9kK+k+9EU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/rd_qc_utils_Prefix-giowopqxncoonvanaypybjaiviqb/rd_qc_utils_Prefix.pch -c /Users/rduarte/Documents/xcode/rd_qc_utils/SwapNumbers.m -o /Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/SwapNumbers.o0#
+
+CCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/junkPlugIn.o /Users/rduarte/Documents/xcode/rd_qc_utils/junkPlugIn.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/rd_qc_utilsPlugIn.o /Users/rduarte/Documents/xcode/rd_qc_utils/rd_qc_utilsPlugIn.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileXIB /Users/rduarte/Documents/xcode/rd_qc_utils/../junk/English.lproj/Settings.xib
+s308691506.229209
+e308691507.141044
+r1
+xCompileXIB
+x/Users/rduarte/Documents/xcode/rd_qc_utils/../junk/English.lproj/Settings.xib
+o/* com.apple.ibtool.document.notices */
+o/Users/rduarte/Documents/xcode/junk/English.lproj/Settings.xib:67: note: This view is clipping its content.
+lSLF07#2@45"CompileXIB ../junk/English.lproj/Settings.xib308691506#308691507#0(148"/* com.apple.ibtool.document.notices *//Users/rduarte/Documents/xcode/junk/English.lproj/Settings.xib:67: note: This view is clipping its content.1(13@34"This view is clipping its content.308691507#18446744073709551615#0#0(6@62"/Users/rduarte/Documents/xcode/junk/English.lproj/Settings.xib308691447#67#0#67#0#0"0(0#0#77"/Users/rduarte/Documents/xcode/rd_qc_utils/../junk/English.lproj/Settings.xib8640526336#393"    cd /Users/rduarte/Documents/xcode/rd_qc_utils    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/rd_qc_utils.plugin/Contents/Resources/English.lproj/Settings.nib /Users/rduarte/Documents/xcode/rd_qc_utils/../junk/English.lproj/Settings.xib --sdk /Developer/SDKs/MacOSX10.6.sdk0#
+
+CCompileXIB /Users/rduarte/Documents/xcode/rd_qc_utils/English.lproj/Settings.xib
+s308988056.057349
+e308988056.325735
+r1
+xCompileXIB
+x/Users/rduarte/Documents/xcode/rd_qc_utils/English.lproj/Settings.xib
+o/* com.apple.ibtool.document.notices */
+o/Users/rduarte/Documents/xcode/rd_qc_utils/English.lproj/Settings.xib:67: note: This view is clipping its content.
+lSLF07#2@37"CompileXIB English.lproj/Settings.xib308988056#308988056#0(155"/* com.apple.ibtool.document.notices *//Users/rduarte/Documents/xcode/rd_qc_utils/English.lproj/Settings.xib:67: note: This view is clipping its content.1(13@34"This view is clipping its content.308988056#18446744073709551615#0#0(6@69"/Users/rduarte/Documents/xcode/rd_qc_utils/English.lproj/Settings.xib308691447#67#0#67#0#0"0(0#0#69"/Users/rduarte/Documents/xcode/rd_qc_utils/English.lproj/Settings.xib30681274979123312#385"    cd /Users/rduarte/Documents/xcode/rd_qc_utils    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/rd_qc_utils.plugin/Contents/Resources/English.lproj/Settings.nib /Users/rduarte/Documents/xcode/rd_qc_utils/English.lproj/Settings.xib --sdk /Developer/SDKs/MacOSX10.6.sdk0#
+
+CCpResource build/Release/rd_qc_utils.plugin/Contents/Resources/English.lproj English.lproj
+r0
+
+CCreateUniversalBinary /Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/rd_qc_utils.plugin/Contents/MacOS/rd_qc_utils normal "x86_64 i386 ppc"
+s309198178.253044
+e309198178.297967
+r1
+xCreateUniversalBinary
+x/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/rd_qc_utils.plugin/Contents/MacOS/rd_qc_utils
+xnormal
+xx86_64 i386 ppc
+lSLF07#2@106"CreateUniversalBinary build/Release/rd_qc_utils.plugin/Contents/MacOS/rd_qc_utils normal "x86_64 i386 ppc"309198178#309198178#0(0"0(0#0#58"/Users/rduarte/Documents/xcode/rd_qc_utils/x86_64 i386 ppc8619039072#563"    cd /Users/rduarte/Documents/xcode/rd_qc_utils    /usr/bin/lipo -create /Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/rd_qc_utils /Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/rd_qc_utils /Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/rd_qc_utils -output /Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/rd_qc_utils.plugin/Contents/MacOS/rd_qc_utils0#
+
+CGenerateDSYMFile /Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/rd_qc_utils.plugin.dSYM /Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/rd_qc_utils.plugin/Contents/MacOS/rd_qc_utils
+s309198178.298062
+e309198178.373817
+r1
+xGenerateDSYMFile
+x/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/rd_qc_utils.plugin.dSYM
+x/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/rd_qc_utils.plugin/Contents/MacOS/rd_qc_utils
+lSLF07#2@114"GenerateDSYMFile build/Release/rd_qc_utils.plugin.dSYM build/Release/rd_qc_utils.plugin/Contents/MacOS/rd_qc_utils309198178#309198178#0(0"0(0#0#102"/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/rd_qc_utils.plugin/Contents/MacOS/rd_qc_utils8618432320#269"    cd /Users/rduarte/Documents/xcode/rd_qc_utils    /Developer/usr/bin/dsymutil /Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/rd_qc_utils.plugin/Contents/MacOS/rd_qc_utils -o /Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/rd_qc_utils.plugin.dSYM0#
+
+CLd /Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/rd_qc_utils normal i386
+s309198176.568667
+e309198177.205995
+r1
+xLd
+x/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/rd_qc_utils
+xnormal
+xi386
+lSLF07#2@129"Link /Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/rd_qc_utils309198176#309198177#0(0"0(0#0#0"8618320576#637"    cd /Users/rduarte/Documents/xcode/rd_qc_utils    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch i386 -bundle -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release -F/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release -filelist /Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/rd_qc_utils.LinkFileList -mmacosx-version-min=10.6 -framework Cocoa -framework Quartz -o /Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/i386/rd_qc_utils0#
+
+CLd /Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/rd_qc_utils normal ppc
+s309198177.882483
+e309198178.252885
+r1
+xLd
+x/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/rd_qc_utils
+xnormal
+xppc
+lSLF07#2@128"Link /Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/rd_qc_utils309198177#309198178#0(0"0(0#0#0"8619804352#634"    cd /Users/rduarte/Documents/xcode/rd_qc_utils    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch ppc -bundle -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release -F/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release -filelist /Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/rd_qc_utils.LinkFileList -mmacosx-version-min=10.6 -framework Cocoa -framework Quartz -o /Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/ppc/rd_qc_utils0#
+
+CLd /Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/rd_qc_utils normal x86_64
+s309198176.554988
+e309198177.209196
+r1
+xLd
+x/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/rd_qc_utils
+xnormal
+xx86_64
+lSLF07#2@131"Link /Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/rd_qc_utils309198176#309198177#0(0"0(0#0#0"8618953760#643"    cd /Users/rduarte/Documents/xcode/rd_qc_utils    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch x86_64 -bundle -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release -F/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release -filelist /Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/rd_qc_utils.LinkFileList -mmacosx-version-min=10.6 -framework Cocoa -framework Quartz -o /Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/Objects-normal/x86_64/rd_qc_utils0#
+
+CProcessInfoPlistFile /Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/rd_qc_utils.plugin/Contents/Info.plist Info.plist
+s309162708.189801
+e309162708.203437
+r1
+xProcessInfoPlistFile
+x/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/rd_qc_utils.plugin/Contents/Info.plist
+xInfo.plist
+lSLF07#2@18"Process Info.plist309162708#309162708#0(0"0(0#0#53"/Users/rduarte/Documents/xcode/rd_qc_utils/Info.plist8703695552#227"    cd /Users/rduarte/Documents/xcode/rd_qc_utils    builtin-infoPlistUtility Info.plist -expandbuildsettings -platform macosx -o /Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/rd_qc_utils.plugin/Contents/Info.plist0#
+
+CProcessPCH /var/folders/bL/bLYjkjRzEgqTQ9kK+k+9EU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/rd_qc_utils_Prefix-bemwkygdowictebophqlhfpntgcz/rd_qc_utils_Prefix.pch.gch rd_qc_utils_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s308557156.953086
+e308557172.006843
+r1
+xProcessPCH
+x/var/folders/bL/bLYjkjRzEgqTQ9kK+k+9EU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/rd_qc_utils_Prefix-bemwkygdowictebophqlhfpntgcz/rd_qc_utils_Prefix.pch.gch
+xrd_qc_utils_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@33"Precompile rd_qc_utils_Prefix.pch308557156#308557172#0(0"0(0#0#65"/Users/rduarte/Documents/xcode/rd_qc_utils/rd_qc_utils_Prefix.pch8665675296#1057"    cd /Users/rduarte/Documents/xcode/rd_qc_utils    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/rd_qc_utils.hmap -F/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/include -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources/i386 -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources -c /Users/rduarte/Documents/xcode/rd_qc_utils/rd_qc_utils_Prefix.pch -o /var/folders/bL/bLYjkjRzEgqTQ9kK+k+9EU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/rd_qc_utils_Prefix-bemwkygdowictebophqlhfpntgcz/rd_qc_utils_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/bL/bLYjkjRzEgqTQ9kK+k+9EU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/rd_qc_utils_Prefix-fxzusovqjmgqvxampuqlnswtuzmo/rd_qc_utils_Prefix.pch.gch rd_qc_utils_Prefix.pch normal ppc objective-c com.apple.compilers.gcc.4_2
+s308557168.870754
+e308557173.572473
+r1
+xProcessPCH
+x/var/folders/bL/bLYjkjRzEgqTQ9kK+k+9EU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/rd_qc_utils_Prefix-fxzusovqjmgqvxampuqlnswtuzmo/rd_qc_utils_Prefix.pch.gch
+xrd_qc_utils_Prefix.pch
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@33"Precompile rd_qc_utils_Prefix.pch308557168#308557173#0(0"0(0#0#65"/Users/rduarte/Documents/xcode/rd_qc_utils/rd_qc_utils_Prefix.pch8615566816#1065"    cd /Users/rduarte/Documents/xcode/rd_qc_utils    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -mtune=G5 -mmacosx-version-min=10.6 -gdwarf-2 -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/rd_qc_utils.hmap -F/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/include -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources/ppc -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources -c /Users/rduarte/Documents/xcode/rd_qc_utils/rd_qc_utils_Prefix.pch -o /var/folders/bL/bLYjkjRzEgqTQ9kK+k+9EU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/rd_qc_utils_Prefix-fxzusovqjmgqvxampuqlnswtuzmo/rd_qc_utils_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/bL/bLYjkjRzEgqTQ9kK+k+9EU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/rd_qc_utils_Prefix-giowopqxncoonvanaypybjaiviqb/rd_qc_utils_Prefix.pch.gch rd_qc_utils_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s308557156.952113
+e308557168.870513
+r1
+xProcessPCH
+x/var/folders/bL/bLYjkjRzEgqTQ9kK+k+9EU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/rd_qc_utils_Prefix-giowopqxncoonvanaypybjaiviqb/rd_qc_utils_Prefix.pch.gch
+xrd_qc_utils_Prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@33"Precompile rd_qc_utils_Prefix.pch308557156#308557168#0(0"0(0#0#65"/Users/rduarte/Documents/xcode/rd_qc_utils/rd_qc_utils_Prefix.pch8667799840#1061"    cd /Users/rduarte/Documents/xcode/rd_qc_utils    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/rd_qc_utils.hmap -F/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/include -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources/x86_64 -I/Users/rduarte/Documents/xcode/rd_qc_utils/build/rd_qc_utils.build/Release/rd_qc_utils.build/DerivedSources -c /Users/rduarte/Documents/xcode/rd_qc_utils/rd_qc_utils_Prefix.pch -o /var/folders/bL/bLYjkjRzEgqTQ9kK+k+9EU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/rd_qc_utils_Prefix-giowopqxncoonvanaypybjaiviqb/rd_qc_utils_Prefix.pch.gch0#
+
+CTouch /Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/rd_qc_utils.plugin
+s309198178.373911
+e309198178.411105
+r1
+xTouch
+x/Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/rd_qc_utils.plugin
+lSLF07#2@81"Touch /Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/rd_qc_utils.plugin309198178#309198178#0(0"0(0#0#0"8619691840#148"    cd /Users/rduarte/Documents/xcode/rd_qc_utils    /usr/bin/touch -c /Users/rduarte/Documents/xcode/rd_qc_utils/build/Release/rd_qc_utils.plugin0#
+
