@@ -266,17 +266,13 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateExpansionKey</key>
 							<array>
 								<string>089C166AFE841209C02AAC07</string>
-								<string>08FB77AFFE84173DC02AAC07</string>
-								<string>32C88E010371C26100C91783</string>
-								<string>19C28FB8FE9D52D311CA2CBB</string>
 								<string>1C37FBAC04509CD000000102</string>
-								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>1</integer>
-									<integer>0</integer>
+									<integer>8</integer>
+									<integer>6</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
@@ -327,7 +323,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>179A8B29126E085600CEBD06</string>
+										<string>179A8B5C126E0DFA00CEBD06</string>
 										<key>history</key>
 										<array>
 											<string>17560B6012663D910099AD56</string>
@@ -350,7 +346,7 @@
 											<string>177F243E126DFD6400DABE60</string>
 											<string>177F243F126DFD6400DABE60</string>
 											<string>179A8B27126E085600CEBD06</string>
-											<string>179A8B28126E085600CEBD06</string>
+											<string>179A8B5B126E0DFA00CEBD06</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -548,6 +544,8 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>1C530D57069F1CE1000CFCEE</string>
+		<string>176473C5126DFFA8009EBC31</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>17D47D991263DCF40017B42F</string>
 		<string>/Users/rduarte/svn/rdqcutils/rd_qc_utils.xcodeproj</string>
@@ -583,7 +581,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {1156, 180}}</string>
 								<key>RubberWindowFrame</key>
-								<string>44 270 1156 462 0 0 1280 778 </string>
+								<string>100 261 1156 462 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -591,6 +589,8 @@
 							<string>180pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -607,7 +607,7 @@
 								<key>Frame</key>
 								<string>{{0, 185}, {1156, 236}}</string>
 								<key>RubberWindowFrame</key>
-								<string>44 270 1156 462 0 0 1280 778 </string>
+								<string>100 261 1156 462 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXBuildResultsModule</string>
@@ -639,7 +639,7 @@
 			<key>WindowContentMinSize</key>
 			<string>486 300</string>
 			<key>WindowString</key>
-			<string>44 270 1156 462 0 0 1280 778 </string>
+			<string>100 261 1156 462 0 0 1280 778 </string>
 			<key>WindowToolGUID</key>
 			<string>17D47D991263DCF40017B42F</string>
 			<key>WindowToolIsVisible</key>
@@ -848,8 +848,8 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C530D57069F1CE1000CFCEE</string>
-				<string>1727A491126D717C00C0A9E9</string>
-				<string>1727A492126D717C00C0A9E9</string>
+				<string>179A8B48126E096E00CEBD06</string>
+				<string>179A8B49126E096E00CEBD06</string>
 				<string>1CDD528C0622207200134675</string>
 				<string>1CD0528E0623707200166675</string>
 			</array>
@@ -991,6 +991,8 @@
 							<string>0pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXCVSModuleFilterTypeKey</key>
@@ -1000,11 +1002,11 @@
 									<key>PBXCVSModuleTreeModuleColumnWidthsKey</key>
 									<array>
 										<real>200</real>
-										<real>56.66162109375</real>
+										<real>56</real>
 										<real>63</real>
 										<real>60</real>
 										<real>63</real>
-										<real>139.556640625</real>
+										<real>139</real>
 									</array>
 									<key>PBXCVSModuleTreeModuleColumnsKey</key>
 									<array>
@@ -1049,7 +1051,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>176473C5126DFFA8009EBC31</string>
-				<string>176473C6126DFFA8009EBC31</string>
+				<string>179A8B38126E08AB00CEBD06</string>
 				<string>1C78EAB2065D492600B07095</string>
 				<string>1CD052920623707200166675</string>
 			</array>
