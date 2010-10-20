@@ -20,7 +20,7 @@
 //@dynamic inputFoo, outputBar;
 
 @dynamic outputNewNum, inputNewMax, inputNewMin, inputOldMax, inputOldMin, inputOldNum;
-@synthesize handleRange, theNum;
+@synthesize handleRange;
 
 + (NSDictionary*) attributes
 {
@@ -159,20 +159,24 @@
 	CGLContextObj cgl_ctx = [context CGLContextObj];
 	*/
     
-    self.theNum = self.inputOldNum;
+    double oldNum = self.inputOldNum;
+    double oldMax = self.inputOldMax;
+    double oldMin = self.inputOldMin;
+    double newMax = self.inputNewMax;
+    double newMin = self.inputNewMin;
+    int handle = self.handleRange;
 
-    if (self.handleRange != 0 && (self.theNum < self.inputOldMin || self.theNum > self.inputOldMax)) {
+    if (handle != 0 && (oldNum < oldMin || oldNum > oldMax)) {
         
-        if (self.handleRange == 2) return NO;  // fail to render
+        if (handle == 2) return NO;  // fail to render
         
         // otherwise, handleRange is 1 (clamp the value before doing the math)
-        if (self.inputOldNum < self.inputOldMin) self.theNum = self.inputOldMin;
-        if (self.inputOldNum > self.inputOldMax) self.theNum = self.inputOldMax;
+        if (oldNum < oldMin) oldNum = oldMin;
+        if (oldNum > oldMax) oldNum = oldMax;
         
     } 
         
-    self.outputNewNum = (self.theNum - self.inputOldMin) * (self.inputNewMax - self.inputNewMin) / 
-        (self.inputOldMax - self.inputOldMin) + self.inputNewMin;    
+    self.outputNewNum = (oldNum - oldMin) * (newMax - newMin) / (oldMax - oldMin) + newMin;    
 	
 	return YES;
 }

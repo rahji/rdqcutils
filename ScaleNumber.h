@@ -11,7 +11,6 @@
 @interface ScaleNumber : QCPlugIn
 {
     int handleRange;
-    double theNum;
 }
 
 /*
@@ -29,6 +28,5 @@ You can access their values in the appropriate plug-in methods using self.inputF
 @property(assign) double inputOldNum;
 
 @property int handleRange; 
-@property double theNum;
 
 @end

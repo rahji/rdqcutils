@@ -20,6 +20,7 @@ You can access their values in the appropriate plug-in methods using self.inputF
 */
 
 @property(assign) NSString * inputURL;
+@property(assign) BOOL inputUpdate;
 @property(assign) NSDictionary * outputParsed;
 
 @end
