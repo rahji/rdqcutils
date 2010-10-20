@@ -94,14 +94,13 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 309302359;
-			PBXWorkspaceStateSaveDate = 309302359;
+			PBXPerProjectTemplateStateSaveDate = 309302567;
+			PBXWorkspaceStateSaveDate = 309302567;
 		};
 		perUserProjectItems = {
+			1731C324126F952A001C88C8 /* PlistBookmark */ = 1731C324126F952A001C88C8 /* PlistBookmark */;
 			17560B6012663D910099AD56 = 17560B6012663D910099AD56 /* PBXTextBookmark */;
 			175AEAB3126F9404001ADF95 = 175AEAB3126F9404001ADF95 /* PBXTextBookmark */;
-			175AEAB4126F9404001ADF95 = 175AEAB4126F9404001ADF95 /* PlistBookmark */;
-			175AEAC0126F9448001ADF95 = 175AEAC0126F9448001ADF95 /* PlistBookmark */;
 			175EF257126E55BB00220377 = 175EF257126E55BB00220377 /* PBXTextBookmark */;
 			175EF259126E55BB00220377 = 175EF259126E55BB00220377 /* PBXTextBookmark */;
 			175EF25A126E55BB00220377 = 175EF25A126E55BB00220377 /* PBXTextBookmark */;
@@ -115,7 +114,7 @@
 			177F241E126DF3F000DABE60 = 177F241E126DF3F000DABE60 /* PBXTextBookmark */;
 			177F241F126DF3F000DABE60 = 177F241F126DF3F000DABE60 /* PBXTextBookmark */;
 			177F243E126DFD6400DABE60 = 177F243E126DFD6400DABE60 /* PBXTextBookmark */;
-			1792EC45126F946500D36A87 /* PlistBookmark */ = 1792EC45126F946500D36A87 /* PlistBookmark */;
+			1792EC4E126F94C800D36A87 = 1792EC4E126F94C800D36A87 /* PlistBookmark */;
 			17AE1A16126F939900A598CF = 17AE1A16126F939900A598CF /* PBXTextBookmark */;
 			17CEF146126E245700924CD6 = 17CEF146126E245700924CD6 /* PBXTextBookmark */;
 			17CEF147126E245700924CD6 = 17CEF147126E245700924CD6 /* PBXTextBookmark */;
@@ -124,6 +123,7 @@
 			17F3D03B126E3F5800747D3E = 17F3D03B126E3F5800747D3E /* PBXTextBookmark */;
 			17F3D03C126E3F5800747D3E = 17F3D03C126E3F5800747D3E /* PBXTextBookmark */;
 			17F3D03D126E3F5800747D3E = 17F3D03D126E3F5800747D3E /* PBXTextBookmark */;
+			17FDC95C126F952000A07CF9 = 17FDC95C126F952000A07CF9 /* PlistBookmark */;
 		};
 		sourceControlManager = 23E90CA40A83C4F400A6A40A /* Source Control */;
 		userBuildSettings = {
@@ -250,6 +250,17 @@
 			sepNavVisRange = "{3314, 1411}";
 		};
 	};
+	1731C324126F952A001C88C8 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D5B49B7048680CD000E48DA /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/rduarte/svn/rdqcutils/Info.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
 	17560B4B126637B50099AD56 /* QCPlugInViewController.h */ = {
 		isa = PBXFileReference;
 		lastKnownFileType = sourcecode.c.h;
@@ -276,30 +287,6 @@
 		rType = 0;
 		vrLen = 1411;
 		vrLoc = 3314;
-	};
-	175AEAB4126F9404001ADF95 /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 8D5B49B7048680CD000E48DA /* Info.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-			QCPlugInClasses,
-			2,
-		);
-		name = /Users/rduarte/svn/rdqcutils/Info.plist;
-		rLen = 0;
-		rLoc = 9223372036854775808;
-	};
-	175AEAC0126F9448001ADF95 /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 8D5B49B7048680CD000E48DA /* Info.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-		);
-		name = /Users/rduarte/svn/rdqcutils/Info.plist;
-		rLen = 0;
-		rLoc = 9223372036854775808;
 	};
 	175EF257126E55BB00220377 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -438,7 +425,7 @@
 		vrLen = 1312;
 		vrLoc = 0;
 	};
-	1792EC45126F946500D36A87 /* PlistBookmark */ = {
+	1792EC4E126F94C800D36A87 /* PlistBookmark */ = {
 		isa = PlistBookmark;
 		fRef = 8D5B49B7048680CD000E48DA /* Info.plist */;
 		fallbackIsa = PBXBookmark;
@@ -447,7 +434,7 @@
 		);
 		name = /Users/rduarte/svn/rdqcutils/Info.plist;
 		rLen = 0;
-		rLoc = 9223372036854775807;
+		rLoc = 9223372036854775808;
 	};
 	17AE1A16126F939900A598CF /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -556,6 +543,17 @@
 		name = NSArray.h;
 		path = /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Foundation.framework/Versions/C/Headers/NSArray.h;
 		sourceTree = "<absolute>";
+	};
+	17FDC95C126F952000A07CF9 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D5B49B7048680CD000E48DA /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/rduarte/svn/rdqcutils/Info.plist;
+		rLen = 0;
+		rLoc = 9223372036854775808;
 	};
 	233E2C640A83C768005A62DF /* Build & Copy */ = {
 		activeExec = 0;

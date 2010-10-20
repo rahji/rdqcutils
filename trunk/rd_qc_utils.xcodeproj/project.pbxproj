@@ -24,7 +24,6 @@
 /* Begin PBXBuildFile section */
 		16BA95420A7EB2EB001E4983 /* ScaleNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BA95410A7EB2EB001E4983 /* ScaleNumber.m */; };
 		16BA96310A7EB9AC001E4983 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16BA96300A7EB9AC001E4983 /* Quartz.framework */; };
-		1727A303126AC89300C0A9E9 /* ScaleNumberSettings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1727A301126AC89300C0A9E9 /* ScaleNumberSettings.xib */; };
 		1727A480126D704400C0A9E9 /* NSString+CHCSVAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1727A473126D704400C0A9E9 /* NSString+CHCSVAdditions.m */; };
 		1727A481126D704400C0A9E9 /* CHCSVSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 1727A475126D704400C0A9E9 /* CHCSVSupport.m */; };
 		1727A482126D704400C0A9E9 /* NSArray+Dictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 1727A478126D704400C0A9E9 /* NSArray+Dictionary.m */; };
@@ -32,6 +31,7 @@
 		1727A484126D704400C0A9E9 /* CHCSVParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1727A47B126D704400C0A9E9 /* CHCSVParser.m */; };
 		1727A485126D704400C0A9E9 /* CHCSVWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1727A47D126D704400C0A9E9 /* CHCSVWriter.m */; };
 		1727A486126D704400C0A9E9 /* CSVImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1727A47F126D704400C0A9E9 /* CSVImporter.m */; };
+		1792EC4B126F94B500D36A87 /* ScaleNumberSettings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1792EC4A126F94B500D36A87 /* ScaleNumberSettings.xib */; };
 		17D47DAB1263DE910017B42F /* SwapNumbers.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D47DAA1263DE910017B42F /* SwapNumbers.m */; };
 		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
@@ -52,7 +52,6 @@
 		16BA95400A7EB2EB001E4983 /* ScaleNumber.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ScaleNumber.h; sourceTree = "<group>"; };
 		16BA95410A7EB2EB001E4983 /* ScaleNumber.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ScaleNumber.m; sourceTree = "<group>"; };
 		16BA96300A7EB9AC001E4983 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = /System/Library/Frameworks/Quartz.framework; sourceTree = "<absolute>"; };
-		1727A302126AC89300C0A9E9 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/Settings.xib; sourceTree = "<group>"; };
 		1727A471126D704400C0A9E9 /* CHCSV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCSV.h; sourceTree = "<group>"; };
 		1727A472126D704400C0A9E9 /* NSString+CHCSVAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CHCSVAdditions.h"; sourceTree = "<group>"; };
 		1727A473126D704400C0A9E9 /* NSString+CHCSVAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CHCSVAdditions.m"; sourceTree = "<group>"; };
@@ -68,6 +67,7 @@
 		1727A47D126D704400C0A9E9 /* CHCSVWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCSVWriter.m; sourceTree = "<group>"; };
 		1727A47E126D704400C0A9E9 /* CSVImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSVImporter.h; sourceTree = "<group>"; };
 		1727A47F126D704400C0A9E9 /* CSVImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSVImporter.m; sourceTree = "<group>"; };
+		1792EC4A126F94B500D36A87 /* ScaleNumberSettings.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScaleNumberSettings.xib; sourceTree = "<group>"; };
 		17D47DA91263DE910017B42F /* SwapNumbers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwapNumbers.h; sourceTree = "<group>"; };
 		17D47DAA1263DE910017B42F /* SwapNumbers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwapNumbers.m; sourceTree = "<group>"; };
 		8D5B49B6048680CD000E48DA /* rd_qc_utils.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rd_qc_utils.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,7 +111,7 @@
 		089C167CFE841241C02AAC07 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				1727A301126AC89300C0A9E9 /* ScaleNumberSettings.xib */,
+				1792EC4A126F94B500D36A87 /* ScaleNumberSettings.xib */,
 				8D5B49B7048680CD000E48DA /* Info.plist */,
 			);
 			name = Resources;
@@ -213,7 +213,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1727A303126AC89300C0A9E9 /* ScaleNumberSettings.xib in Resources */,
+				1792EC4B126F94B500D36A87 /* ScaleNumberSettings.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,17 +261,6 @@
 			targetProxy = 233E2C650A83C76D005A62DF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		1727A301126AC89300C0A9E9 /* ScaleNumberSettings.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1727A302126AC89300C0A9E9 /* English */,
-			);
-			name = ScaleNumberSettings.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1DEB913B08733D840010E9CD /* Debug */ = {
