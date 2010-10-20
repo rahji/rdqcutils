@@ -129,7 +129,7 @@
 {
 	//Return a new QCPlugInViewController to edit the internal settings of this plug-in instance.
 	//You can return a subclass of QCPlugInViewController if necessary.
-	return [[QCPlugInViewController alloc] initWithPlugIn:self viewNibName:@"Settings"];
+	return [[QCPlugInViewController alloc] initWithPlugIn:self viewNibName:@"ScaleNumberSettings"];
 }
 
 @end

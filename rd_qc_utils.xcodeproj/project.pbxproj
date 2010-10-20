@@ -24,7 +24,7 @@
 /* Begin PBXBuildFile section */
 		16BA95420A7EB2EB001E4983 /* ScaleNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BA95410A7EB2EB001E4983 /* ScaleNumber.m */; };
 		16BA96310A7EB9AC001E4983 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16BA96300A7EB9AC001E4983 /* Quartz.framework */; };
-		1727A303126AC89300C0A9E9 /* Settings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1727A301126AC89300C0A9E9 /* Settings.xib */; };
+		1727A303126AC89300C0A9E9 /* ScaleNumberSettings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1727A301126AC89300C0A9E9 /* ScaleNumberSettings.xib */; };
 		1727A480126D704400C0A9E9 /* NSString+CHCSVAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1727A473126D704400C0A9E9 /* NSString+CHCSVAdditions.m */; };
 		1727A481126D704400C0A9E9 /* CHCSVSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 1727A475126D704400C0A9E9 /* CHCSVSupport.m */; };
 		1727A482126D704400C0A9E9 /* NSArray+Dictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 1727A478126D704400C0A9E9 /* NSArray+Dictionary.m */; };
@@ -111,7 +111,7 @@
 		089C167CFE841241C02AAC07 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				1727A301126AC89300C0A9E9 /* Settings.xib */,
+				1727A301126AC89300C0A9E9 /* ScaleNumberSettings.xib */,
 				8D5B49B7048680CD000E48DA /* Info.plist */,
 			);
 			name = Resources;
@@ -213,7 +213,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1727A303126AC89300C0A9E9 /* Settings.xib in Resources */,
+				1727A303126AC89300C0A9E9 /* ScaleNumberSettings.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,12 +263,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1727A301126AC89300C0A9E9 /* Settings.xib */ = {
+		1727A301126AC89300C0A9E9 /* ScaleNumberSettings.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				1727A302126AC89300C0A9E9 /* English */,
 			);
-			name = Settings.xib;
+			name = ScaleNumberSettings.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
