@@ -123,8 +123,12 @@
 	CGLContextObj cgl_ctx = [context CGLContextObj];
 	*/
     
-    self.outputA = (self.inputEnable) ? self.inputB : self.inputA;
-    self.outputB = (self.inputEnable) ? self.inputA : self.inputB;
+    BOOL enable = self.inputEnable;
+    double a = self.inputA;
+    double b = self.inputB;
+    
+    self.outputA = (enable) ? b : a;
+    self.outputB = (enable) ? a : b;
     
 	return YES;
 }
