@@ -1,25 +1,24 @@
 //
-//  CSVImporter.m
+//  TextFileImporter.h
 //  rd_qc_utils
 //
-//  Created by Rob Duarte on 10/17/10.
+//  Created by Rob Duarte on 10/28/10.
 //  Copyright (c) 2010 rahji.com. All rights reserved.
 //
 
 /* It's highly recommended to use CGL macros instead of changing the current context for plug-ins that perform OpenGL rendering */
 #import <OpenGL/CGLMacro.h>
-#import "CSVImporter.h"
-#import "CHCSV.h"
+#import "TextFileImporter.h"
 #import "NSArray+Dictionary.h"
 
-#define	kQCPlugIn_Name			@"CSV Importer"
-#define	kQCPlugIn_Description	@"Imports a CSV text file from a URL and outputs a structure of structures, containing rows of fields.  Local files can be imported by specifying a file:// URL  (Remember that an absolute path will have 3 slashes at its start eg: file:///Users/bill/file.txt).\n\nThe import occurs every time the Update Signal input goes from LOW to HIGH."
+#define	kQCPlugIn_Name			@"Text File Importer"
+#define	kQCPlugIn_Description	@"Imports a plain text file from a URL and outputs a structure containing one member per line.  Local files can be imported by specifying a file:// URL  (Remember that an absolute path will have 3 slashes at its start eg: file:///Users/bill/file.txt).\n\nThe line order structure keys (not the indices).\n\nThe import occurs every time the Update Signal input goes from LOW to HIGH."
 
 
-@implementation CSVImporter
+@implementation TextFileImporter
 
 //Here you need to declare the input / output properties as dynamic as Quartz Composer will handle their implementation
-@dynamic inputUpdate, inputURL, outputParsed;
+@dynamic inputUpdate, inputURL, outputStructure;
 
 + (NSDictionary*) attributes
 {
@@ -32,16 +31,16 @@
 	//Specify the optional attributes for property based ports (QCPortAttributeNameKey, QCPortAttributeDefaultValueKey...).
     if([key isEqualToString:@"inputURL"])
         return [NSDictionary dictionaryWithObjectsAndKeys:
-                @"CSV URL", QCPortAttributeNameKey,
+                @"Text File URL", QCPortAttributeNameKey,
                 nil];
     if([key isEqualToString:@"inputUpdate"])
         return [NSDictionary dictionaryWithObjectsAndKeys:
                 @"Update Signal", QCPortAttributeNameKey,
                 NO, QCPortAttributeDefaultValueKey,
                 nil];
-    if([key isEqualToString:@"outputParsed"])
+    if([key isEqualToString:@"outputStructure"])
         return [NSDictionary dictionaryWithObjectsAndKeys:
-                @"Parsed CSV", QCPortAttributeNameKey,
+                @"Structure", QCPortAttributeNameKey,
                 nil];
     
 	return nil;
@@ -82,7 +81,7 @@
 @end
 
 
-@implementation CSVImporter (Execution)
+@implementation TextFileImporter (Execution)
 
 - (BOOL) startExecution:(id<QCPlugInContext>)context
 {
@@ -99,22 +98,24 @@
 - (BOOL) execute:(id<QCPlugInContext>)context atTime:(NSTimeInterval)time withArguments:(NSDictionary*)arguments
 {
 	/*
-	Called by Quartz Composer whenever the plug-in instance needs to execute.
-	Only read from the plug-in inputs and produce a result (by writing to the plug-in outputs or rendering to the destination OpenGL context) within that method and nowhere else.
-	Return NO in case of failure during the execution (this will prevent rendering of the current frame to complete).
-	
-	The OpenGL context for rendering can be accessed and defined for CGL macros using:
-	CGLContextObj cgl_ctx = [context CGLContextObj];
-	*/
+     Called by Quartz Composer whenever the plug-in instance needs to execute.
+     Only read from the plug-in inputs and produce a result (by writing to the plug-in outputs or rendering to the destination OpenGL context) within that method and nowhere else.
+     Return NO in case of failure during the execution (this will prevent rendering of the current frame to complete).
+     
+     The OpenGL context for rendering can be accessed and defined for CGL macros using:
+     CGLContextObj cgl_ctx = [context CGLContextObj];
+     */
     
     if ([self didValueForInputKeyChange:@"inputUpdate"] && self.inputUpdate) {
-        NSStringEncoding encoding;
-        NSString *returnData = [NSString stringWithContentsOfURL:[NSURL URLWithString:self.inputURL] 
-                                                usedEncoding:&encoding error:nil];
-        // NSString -> NSArray -> NSDictionary
-        self.outputParsed = [[returnData CSVComponents] indexKeyedDictionary];
-    }
 
+        NSStringEncoding encoding;
+        NSString * returnString = [NSString stringWithContentsOfURL:[NSURL URLWithString:self.inputURL] 
+                                                    usedEncoding:&encoding error:nil];
+        // NSArray -> NSDictionary
+        self.outputStructure = [[returnString componentsSeparatedByCharactersInSet:[NSCharacterSet newlineCharacterSet]] indexKeyedDictionary];
+ 
+    } 
+    
 	return YES;
 }
 

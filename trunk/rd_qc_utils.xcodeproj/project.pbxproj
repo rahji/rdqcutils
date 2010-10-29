@@ -24,6 +24,7 @@
 /* Begin PBXBuildFile section */
 		16BA95420A7EB2EB001E4983 /* ScaleNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BA95410A7EB2EB001E4983 /* ScaleNumber.m */; };
 		16BA96310A7EB9AC001E4983 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16BA96300A7EB9AC001E4983 /* Quartz.framework */; };
+		17232748127A70C500286F76 /* TextFileImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 17232747127A70C500286F76 /* TextFileImporter.m */; };
 		1727A480126D704400C0A9E9 /* NSString+CHCSVAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1727A473126D704400C0A9E9 /* NSString+CHCSVAdditions.m */; };
 		1727A481126D704400C0A9E9 /* CHCSVSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 1727A475126D704400C0A9E9 /* CHCSVSupport.m */; };
 		1727A482126D704400C0A9E9 /* NSArray+Dictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 1727A478126D704400C0A9E9 /* NSArray+Dictionary.m */; };
@@ -52,6 +53,8 @@
 		16BA95400A7EB2EB001E4983 /* ScaleNumber.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ScaleNumber.h; sourceTree = "<group>"; };
 		16BA95410A7EB2EB001E4983 /* ScaleNumber.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ScaleNumber.m; sourceTree = "<group>"; };
 		16BA96300A7EB9AC001E4983 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = /System/Library/Frameworks/Quartz.framework; sourceTree = "<absolute>"; };
+		17232746127A70C500286F76 /* TextFileImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFileImporter.h; sourceTree = "<group>"; };
+		17232747127A70C500286F76 /* TextFileImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFileImporter.m; sourceTree = "<group>"; };
 		1727A471126D704400C0A9E9 /* CHCSV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCSV.h; sourceTree = "<group>"; };
 		1727A472126D704400C0A9E9 /* NSString+CHCSVAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CHCSVAdditions.h"; sourceTree = "<group>"; };
 		1727A473126D704400C0A9E9 /* NSString+CHCSVAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CHCSVAdditions.m"; sourceTree = "<group>"; };
@@ -134,6 +137,8 @@
 				1727A47C126D704400C0A9E9 /* CHCSVWriter.h */,
 				1727A47D126D704400C0A9E9 /* CHCSVWriter.m */,
 				1727A47E126D704400C0A9E9 /* CSVImporter.h */,
+				17232746127A70C500286F76 /* TextFileImporter.h */,
+				17232747127A70C500286F76 /* TextFileImporter.m */,
 				1727A47F126D704400C0A9E9 /* CSVImporter.m */,
 				17D47DA91263DE910017B42F /* SwapNumbers.h */,
 				17D47DAA1263DE910017B42F /* SwapNumbers.m */,
@@ -249,6 +254,7 @@
 				1727A484126D704400C0A9E9 /* CHCSVParser.m in Sources */,
 				1727A485126D704400C0A9E9 /* CHCSVWriter.m in Sources */,
 				1727A486126D704400C0A9E9 /* CSVImporter.m in Sources */,
+				17232748127A70C500286F76 /* TextFileImporter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

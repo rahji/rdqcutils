@@ -12,7 +12,7 @@
 #import "ScaleNumber.h"
 
 #define	kQCPlugIn_Name				@"Scale Number"
-#define	kQCPlugIn_Description		@"Scale a number up or down, from one min-max range to another.  The patch settings determine the behavior when the original number is outside the specified original min-max range.  The Range patch can also be a handy partner."
+#define	kQCPlugIn_Description		@"Scale a number up or down, from one min-max range to another.\n\nThe patch settings determine the behavior when the original number is outside the specified original min-max range.  The Range patch can also be a handy partner."
 
 @implementation ScaleNumber
 
