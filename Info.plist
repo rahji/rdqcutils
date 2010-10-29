@@ -15,9 +15,9 @@
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleGetInfoString</key>
-	<string>rd_qc_utils version 1.0, Copyright rahji.com</string>
+	<string>rd_qc_utils version 1.1, Copyright rahji.com</string>
 	<key>CFBundleVersion</key>
-	<string>1.0</string>
+	<string>1.1</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.1</string>
 	<key>QCPlugInClasses</key>
@@ -25,6 +25,7 @@
 		<string>ScaleNumber</string>
 		<string>SwapNumbers</string>
 		<string>CSVImporter</string>
+		<string>TextFileImporter</string>
 	</array>
 </dict>
 </plist>
