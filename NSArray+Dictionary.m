@@ -15,9 +15,13 @@
     id arrayObjects[arrayCount], objectKeys[arrayCount];
     
     [self getObjects:arrayObjects range:NSMakeRange(0UL, arrayCount)];
-    for(NSUInteger index = 0UL; index < arrayCount; index++) { objectKeys[index] = [NSNumber numberWithUnsignedInteger:index]; }
+    for(NSUInteger index = 0UL; index < arrayCount; index++) { 
+        //objectKeys[index] = [NSNumber numberWithUnsignedInteger:index]; 
+        objectKeys[index] = [NSString stringWithFormat: @"line%d", index+1]; 
+    }
     
     return([NSDictionary dictionaryWithObjects:arrayObjects forKeys:objectKeys count:arrayCount]);
 }
 
 @end
+
