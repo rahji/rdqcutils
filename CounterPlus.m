@@ -1,24 +1,23 @@
 //
-//  TextFileImporter.h
+//  CounterPlus.h
 //  rd_qc_utils
 //
-//  Created by Rob Duarte on 10/28/10.
+//  Created by Rob Duarte on 11/29/10.
 //  Copyright (c) 2010 rahji.com. All rights reserved.
 //
 
 /* It's highly recommended to use CGL macros instead of changing the current context for plug-ins that perform OpenGL rendering */
 #import <OpenGL/CGLMacro.h>
-#import "TextFileImporter.h"
-#import "NSArray+Dictionary.h"
 
-#define	kQCPlugIn_Name			@"Text File Importer"
-#define	kQCPlugIn_Description	@"Imports a plain text file from a URL and outputs a structure containing one member per line.  Local files can be imported by specifying a file:// URL  (Remember that an absolute path will have 3 slashes at its start eg: file:///Users/bill/file.txt).\n\nThe line order structure keys (not the indices).\n\nThe import occurs every time the Update Signal input goes from LOW to HIGH.\n\nhttp://code.google.com/p/rdqcutils/"
+#import "CounterPlus.h"
 
+#define	kQCPlugIn_Name				@"Counter Plus"
+#define	kQCPlugIn_Description		@"Like the normal counter, but allows for optionally decrementing below zero.  You can also specify an amount by which to increment or decrement.\n\nhttp://code.google.com/p/rdqcutils/"
 
-@implementation TextFileImporter
+@implementation CounterPlus
 
 //Here you need to declare the input / output properties as dynamic as Quartz Composer will handle their implementation
-@dynamic inputUpdate, inputURL, outputStructure;
+@dynamic inputIncreasing, inputDecreasing, inputAmount, inputReset, inputAllowNegatives, outputCount;
 
 + (NSDictionary*) attributes
 {
@@ -29,21 +28,40 @@
 + (NSDictionary*) attributesForPropertyPortWithKey:(NSString*)key
 {
 	//Specify the optional attributes for property based ports (QCPortAttributeNameKey, QCPortAttributeDefaultValueKey...).
-    if([key isEqualToString:@"inputURL"])
-        return [NSDictionary dictionaryWithObjectsAndKeys:
-                @"Text File URL", QCPortAttributeNameKey,
-                nil];
-    if([key isEqualToString:@"inputUpdate"])
-        return [NSDictionary dictionaryWithObjectsAndKeys:
-                @"Update Signal", QCPortAttributeNameKey,
-                //[NSNumber numberWithBool:NO], QCPortAttributeDefaultValueKey,
-                nil];
-    if([key isEqualToString:@"outputStructure"])
-        return [NSDictionary dictionaryWithObjectsAndKeys:
-                @"Structure", QCPortAttributeNameKey,
-                nil];
     
+    if([key isEqualToString:@"inputIncreasing"])
+        return [NSDictionary dictionaryWithObjectsAndKeys:
+                @"Increasing Signal", QCPortAttributeNameKey,
+                nil];
+    if([key isEqualToString:@"inputDecreasing"])
+        return [NSDictionary dictionaryWithObjectsAndKeys:
+                @"Decreasing Signal", QCPortAttributeNameKey,
+                nil];
+    if([key isEqualToString:@"inputReset"])
+        return [NSDictionary dictionaryWithObjectsAndKeys:
+                @"Reset Signal", QCPortAttributeNameKey,
+                nil];
+    if([key isEqualToString:@"inputAllowNegatives"])
+        return [NSDictionary dictionaryWithObjectsAndKeys:
+                @"Allow Negatives", QCPortAttributeNameKey,
+                [NSNumber numberWithBool:YES], QCPortAttributeDefaultValueKey,
+                nil];
+    if([key isEqualToString:@"inputAmount"])
+        return [NSDictionary dictionaryWithObjectsAndKeys:
+                @"By Amount", QCPortAttributeNameKey,
+                @"1", QCPortAttributeDefaultValueKey,
+                nil];
+    if([key isEqualToString:@"outputCount"])
+        return [NSDictionary dictionaryWithObjectsAndKeys:
+                @"Count", QCPortAttributeNameKey,
+                nil];
+        
 	return nil;
+}
+
++ (NSArray*) sortedPropertyPortKeys
+{
+    return [NSArray arrayWithObjects:@"inputIncreasing",@"inputDecreasing",@"inputReset",@"inputAllowNegatives",@"inputAmount",@"outputCount",nil];
 }
 
 + (QCPlugInExecutionMode) executionMode
@@ -61,32 +79,33 @@
 - (id) init
 {
 	if(self = [super init]) {
-		// Allocate any permanent resource required by the plug-in.
+		//Allocate any permanent resource required by the plug-in.
+        count = 0;
 	}
+	    
 	return self;
 }
 
 - (void) finalize
 {
-	// Release any non garbage collected resources created in -init.
+	//Release any non garbage collected resources created in -init.
 	[super finalize];
 }
 
 - (void) dealloc
 {
-	// Release any resources created in -init.	
+	//Release any resources created in -init.	
 	[super dealloc];
 }
 
 @end
 
-
-@implementation TextFileImporter (Execution)
+@implementation CounterPlus (Execution)
 
 - (BOOL) startExecution:(id<QCPlugInContext>)context
 {
 	//Called by Quartz Composer when rendering of the composition starts: perform any required setup for the plug-in.
-	//Return NO in case of fatal failure (this will prevent rendering of the composition to start).	
+	//Return NO in case of fatal failure (this will prevent rendering of the composition to start).
 	return YES;
 }
 
@@ -106,15 +125,21 @@
      CGLContextObj cgl_ctx = [context CGLContextObj];
      */
     
-    if ([self didValueForInputKeyChange:@"inputUpdate"] && self.inputUpdate) {
-
-        NSStringEncoding encoding;
-        NSString * returnString = [NSString stringWithContentsOfURL:[NSURL URLWithString:self.inputURL] 
-                                                    usedEncoding:&encoding error:nil];
-        // NSArray -> NSDictionary
-        self.outputStructure = [[returnString componentsSeparatedByCharactersInSet:[NSCharacterSet newlineCharacterSet]] indexKeyedDictionary];
- 
-    } 
+    double amount = self.inputAmount;
+    BOOL allowNegatives = self.inputAllowNegatives;
+    
+    //the second half of this conditional catches a change to allowNegatives
+    //while the output value is already negative
+    if ( self.inputReset || (!allowNegatives && count < 0) ) { 
+        count = 0;
+    } else if (self.inputIncreasing) {
+        count += amount;
+    } else if (self.inputDecreasing) {
+        //short circuit below - works like allowneg || (!allowneg && count>0)
+        if (allowNegatives || count > 0) count -= amount;
+    }
+    
+    self.outputCount = count;
     
 	return YES;
 }

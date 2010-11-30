@@ -13,7 +13,7 @@
 #import "NSArray+Dictionary.h"
 
 #define	kQCPlugIn_Name			@"CSV Importer"
-#define	kQCPlugIn_Description	@"Imports a CSV text file from a URL and outputs a structure of structures, containing rows of fields.  Local files can be imported by specifying a file:// URL  (Remember that an absolute path will have 3 slashes at its start eg: file:///Users/bill/file.txt).\n\nThe import occurs every time the Update Signal input goes from LOW to HIGH."
+#define	kQCPlugIn_Description	@"Imports a CSV text file from a URL and outputs a structure of structures, containing rows of fields.  Local files can be imported by specifying a file:// URL  (Remember that an absolute path will have 3 slashes at its start eg: file:///Users/bill/file.txt).\n\nThe import occurs every time the Update Signal input goes from LOW to HIGH.\n\nhttp://code.google.com/p/rdqcutils/"
 
 
 @implementation CSVImporter
@@ -37,7 +37,7 @@
     if([key isEqualToString:@"inputUpdate"])
         return [NSDictionary dictionaryWithObjectsAndKeys:
                 @"Update Signal", QCPortAttributeNameKey,
-                NO, QCPortAttributeDefaultValueKey,
+                //[NSNumber numberWithBool:NO], QCPortAttributeDefaultValueKey,
                 nil];
     if([key isEqualToString:@"outputParsed"])
         return [NSDictionary dictionaryWithObjectsAndKeys:
