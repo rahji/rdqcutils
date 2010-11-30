@@ -12,7 +12,7 @@
 #import "NSArray+Dictionary.h"
 
 #define	kQCPlugIn_Name			@"Text File Importer"
-#define	kQCPlugIn_Description	@"Imports a plain text file from a URL and outputs a structure containing one member per line.  Local files can be imported by specifying a file:// URL  (Remember that an absolute path will have 3 slashes at its start eg: file:///Users/bill/file.txt).\n\nThe line order structure keys (not the indices).\n\nThe import occurs every time the Update Signal input goes from LOW to HIGH.\n\nhttp://code.google.com/p/rdqcutils/"
+#define	kQCPlugIn_Description	@"Imports a plain text file from a URL and outputs a structure containing one member per line.  Local files can be imported by specifying a file:// URL  (Remember that an absolute path will have 3 slashes at its start eg: file:///Users/bill/file.txt).\n\nThe structure's numerical indices are not necessarily in order. To retrieve the lines in order, use the structure keys and not the indices.\n\nThe import occurs every time the Update Signal input goes from LOW to HIGH.\n\nhttp://code.google.com/p/rdqcutils/"
 
 
 @implementation TextFileImporter
