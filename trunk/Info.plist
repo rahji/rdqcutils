@@ -26,6 +26,7 @@
 		<string>SwapNumbers</string>
 		<string>CSVImporter</string>
 		<string>TextFileImporter</string>
+		<string>CounterPlus</string>
 	</array>
 </dict>
 </plist>

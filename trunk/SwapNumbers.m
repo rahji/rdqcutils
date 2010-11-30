@@ -12,7 +12,7 @@
 #import "SwapNumbers.h"
 
 #define	kQCPlugIn_Name				@"Swap Numbers"
-#define	kQCPlugIn_Description		@"Swap two numbers, or not."
+#define	kQCPlugIn_Description		@"Swap two numbers, or not.\n\nhttp://code.google.com/p/rdqcutils/"
 
 @implementation SwapNumbers
 
