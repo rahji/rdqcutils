@@ -270,8 +270,6 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>21</integer>
-									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -306,14 +304,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>CounterPlus.m</string>
+								<string>Info.plist</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -321,11 +317,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>CounterPlus.m</string>
+										<string>Info.plist</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>17A1A1F212A81DCE00CE4696</string>
+										<string>1700D5B112A81EA00056DE0D</string>
 										<key>history</key>
 										<array>
 											<string>17560B6012663D910099AD56</string>
@@ -346,7 +342,6 @@
 											<string>17FD68AC12877D3600B05BF2</string>
 											<string>17FD68AD12877D3600B05BF2</string>
 											<string>174732C012A4877700613EE6</string>
-											<string>174732D212A49E4E00613EE6</string>
 											<string>174732F012A4A20800613EE6</string>
 											<string>1747339412A4B8F900613EE6</string>
 											<string>1747339612A4B8F900613EE6</string>
@@ -354,10 +349,11 @@
 											<string>174733D912A4C09C00613EE6</string>
 											<string>1766EE7812A4C74700F1D571</string>
 											<string>1766EE7912A4C74700F1D571</string>
-											<string>17A1A1E712A81B6900CE4696</string>
 											<string>17A1A1E812A81B6900CE4696</string>
 											<string>17A1A1E912A81B6900CE4696</string>
-											<string>17A1A1EA12A81B6900CE4696</string>
+											<string>1700D5AF12A81EA00056DE0D</string>
+											<string>1700D5B012A81EA00056DE0D</string>
+											<string>17A1A1E712A81B6900CE4696</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -369,14 +365,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1092, 470}}</string>
+								<string>{{0, 0}, {1092, 464}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 59 1280 719 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>470pt</string>
+							<string>464pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -389,14 +385,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 475}, {1092, 203}}</string>
+								<string>{{0, 469}, {1092, 209}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 59 1280 719 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>203pt</string>
+							<string>209pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -415,9 +411,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>17A1A1EC12A81B6900CE4696</string>
+				<string>1700D5A312A81E320056DE0D</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>17A1A1ED12A81B6900CE4696</string>
+				<string>1700D5A412A81E320056DE0D</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -636,7 +632,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>17D47D991263DCF40017B42F</string>
-				<string>17A1A1EE12A81B6900CE4696</string>
+				<string>1700D5A512A81E320056DE0D</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
