@@ -23,6 +23,7 @@
 @property(assign) BOOL inputIncreasing;
 @property(assign) BOOL inputDecreasing;
 @property(assign) double inputAmount;
+@property(assign) double inputStart;
 @property(assign) BOOL inputReset;
 @property(assign) BOOL inputAllowNegatives;
 @property(assign) double outputCount;

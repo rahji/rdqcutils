@@ -270,6 +270,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
+									<integer>21</integer>
+									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -304,12 +306,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>Info.plist</string>
+								<string>CounterPlus.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -317,11 +321,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>Info.plist</string>
+										<string>CounterPlus.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>1766EE7B12A4C74700F1D571</string>
+										<string>17A1A1F212A81DCE00CE4696</string>
 										<key>history</key>
 										<array>
 											<string>17560B6012663D910099AD56</string>
@@ -345,15 +349,15 @@
 											<string>174732D212A49E4E00613EE6</string>
 											<string>174732F012A4A20800613EE6</string>
 											<string>1747339412A4B8F900613EE6</string>
-											<string>1747339512A4B8F900613EE6</string>
 											<string>1747339612A4B8F900613EE6</string>
 											<string>1747339712A4B8F900613EE6</string>
-											<string>174733C712A4BE0900613EE6</string>
 											<string>174733D912A4C09C00613EE6</string>
-											<string>174733DC12A4C18400613EE6</string>
 											<string>1766EE7812A4C74700F1D571</string>
 											<string>1766EE7912A4C74700F1D571</string>
-											<string>1766EE7A12A4C74700F1D571</string>
+											<string>17A1A1E712A81B6900CE4696</string>
+											<string>17A1A1E812A81B6900CE4696</string>
+											<string>17A1A1E912A81B6900CE4696</string>
+											<string>17A1A1EA12A81B6900CE4696</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -365,18 +369,16 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1092, 476}}</string>
+								<string>{{0, 0}, {1092, 470}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 59 1280 719 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>476pt</string>
+							<string>470pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -387,14 +389,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 481}, {1092, 197}}</string>
+								<string>{{0, 475}, {1092, 203}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 59 1280 719 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>197pt</string>
+							<string>203pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -413,9 +415,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>1766EE7112A4C59A00F1D571</string>
+				<string>17A1A1EC12A81B6900CE4696</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>1766EE7212A4C59A00F1D571</string>
+				<string>17A1A1ED12A81B6900CE4696</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -634,7 +636,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>17D47D991263DCF40017B42F</string>
-				<string>1766EE7312A4C59A00F1D571</string>
+				<string>17A1A1EE12A81B6900CE4696</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
