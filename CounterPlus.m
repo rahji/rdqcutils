@@ -12,12 +12,12 @@
 #import "CounterPlus.h"
 
 #define	kQCPlugIn_Name				@"Counter Plus"
-#define	kQCPlugIn_Description		@"Like the normal counter, but allows for optionally decrementing below zero.  You can also specify an amount by which to increment or decrement.\n\nhttp://code.google.com/p/rdqcutils/"
+#define	kQCPlugIn_Description		@"Like the normal counter, but allows for optionally decrementing below zero.  You can also specify a starting number and an amount by which to increment or decrement.\n\nThe count continues even after stopping and starting the composition.\n\nhttp://code.google.com/p/rdqcutils/"
 
 @implementation CounterPlus
 
 //Here you need to declare the input / output properties as dynamic as Quartz Composer will handle their implementation
-@dynamic inputIncreasing, inputDecreasing, inputAmount, inputReset, inputAllowNegatives, outputCount;
+@dynamic inputIncreasing, inputDecreasing, inputAmount, inputStart, inputReset, inputAllowNegatives, outputCount;
 
 + (NSDictionary*) attributes
 {
@@ -51,6 +51,11 @@
                 @"By Amount", QCPortAttributeNameKey,
                 @"1", QCPortAttributeDefaultValueKey,
                 nil];
+    if([key isEqualToString:@"inputStart"])
+        return [NSDictionary dictionaryWithObjectsAndKeys:
+                @"Start With", QCPortAttributeNameKey,
+                @"0", QCPortAttributeDefaultValueKey,
+                nil];
     if([key isEqualToString:@"outputCount"])
         return [NSDictionary dictionaryWithObjectsAndKeys:
                 @"Count", QCPortAttributeNameKey,
@@ -61,7 +66,7 @@
 
 + (NSArray*) sortedPropertyPortKeys
 {
-    return [NSArray arrayWithObjects:@"inputIncreasing",@"inputDecreasing",@"inputReset",@"inputAllowNegatives",@"inputAmount",@"outputCount",nil];
+    return [NSArray arrayWithObjects:@"inputIncreasing",@"inputDecreasing",@"inputReset",@"inputAllowNegatives",@"inputStart",@"inputAmount",@"outputCount",nil];
 }
 
 + (QCPlugInExecutionMode) executionMode
@@ -128,10 +133,10 @@
     double amount = self.inputAmount;
     BOOL allowNegatives = self.inputAllowNegatives;
     
-    //the second half of this conditional catches a change to allowNegatives
-    //while the output value is already negative
-    if ( self.inputReset || (!allowNegatives && count < 0) ) { 
-        count = 0;
+    if (!allowNegatives && count < 0) { return NO; } // fail to render
+    
+    if (self.inputReset) {
+        count = self.inputStart;
     } else if (self.inputIncreasing) {
         count += amount;
     } else if (self.inputDecreasing) {
