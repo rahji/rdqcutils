@@ -138,15 +138,15 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 314083868;
-			PBXWorkspaceStateSaveDate = 314083868;
+			PBXPerProjectTemplateStateSaveDate = 314085309;
+			PBXWorkspaceStateSaveDate = 314085309;
 		};
 		perUserProjectItems = {
 			1700D5B012A81EA00056DE0D /* PBXTextBookmark */ = 1700D5B012A81EA00056DE0D /* PBXTextBookmark */;
-			170BC23A12B889F700DF2140 /* PlistBookmark */ = 170BC23A12B889F700DF2140 /* PlistBookmark */;
 			170BC27512B88E5D00DF2140 /* PBXTextBookmark */ = 170BC27512B88E5D00DF2140 /* PBXTextBookmark */;
-			170BC27612B88E5D00DF2140 /* PBXTextBookmark */ = 170BC27612B88E5D00DF2140 /* PBXTextBookmark */;
-			170BC27912B88EBE00DF2140 /* PBXTextBookmark */ = 170BC27912B88EBE00DF2140 /* PBXTextBookmark */;
+			170BC28912B88FD300DF2140 /* PBXTextBookmark */ = 170BC28912B88FD300DF2140 /* PBXTextBookmark */;
+			170BC28A12B88FD300DF2140 /* PlistBookmark */ = 170BC28A12B88FD300DF2140 /* PlistBookmark */;
+			170BC28B12B88FD300DF2140 /* PlistBookmark */ = 170BC28B12B88FD300DF2140 /* PlistBookmark */;
 			17232775127A751100286F76 /* PBXTextBookmark */ = 17232775127A751100286F76 /* PBXTextBookmark */;
 			17232776127A751100286F76 /* PBXTextBookmark */ = 17232776127A751100286F76 /* PBXTextBookmark */;
 			17232777127A751100286F76 /* PBXTextBookmark */ = 17232777127A751100286F76 /* PBXTextBookmark */;
@@ -210,17 +210,6 @@
 		vrLen = 50;
 		vrLoc = 0;
 	};
-	170BC23A12B889F700DF2140 /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 8D5B49B7048680CD000E48DA /* Info.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-		);
-		name = /Users/rduarte/svn/rdqcutils/Info.plist;
-		rLen = 0;
-		rLoc = 9223372036854775808;
-	};
 	170BC27512B88E5D00DF2140 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 174732A012A482F500613EE6 /* CounterPlus.m */;
@@ -231,17 +220,7 @@
 		vrLen = 1342;
 		vrLoc = 3764;
 	};
-	170BC27612B88E5D00DF2140 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 1747329F12A482F500613EE6 /* CounterPlus.h */;
-		name = "CounterPlus.h: 33";
-		rLen = 0;
-		rLoc = 800;
-		rType = 0;
-		vrLen = 775;
-		vrLoc = 0;
-	};
-	170BC27912B88EBE00DF2140 /* PBXTextBookmark */ = {
+	170BC28912B88FD300DF2140 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 1747329F12A482F500613EE6 /* CounterPlus.h */;
 		name = "CounterPlus.h: 14";
@@ -250,6 +229,28 @@
 		rType = 0;
 		vrLen = 800;
 		vrLoc = 0;
+	};
+	170BC28A12B88FD300DF2140 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D5B49B7048680CD000E48DA /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/rduarte/svn/rdqcutils/Info.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	170BC28B12B88FD300DF2140 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D5B49B7048680CD000E48DA /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/rduarte/svn/rdqcutils/Info.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
 	};
 	17232746127A70C500286F76 /* TextFileImporter.h */ = {
 		uiCtxt = {
@@ -414,7 +415,7 @@
 	};
 	1747329F12A482F500613EE6 /* CounterPlus.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1031, 556}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1031, 553}}";
 			sepNavSelRange = "{243, 0}";
 			sepNavVisRange = "{0, 800}";
 		};
