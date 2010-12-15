@@ -15,11 +15,11 @@
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleGetInfoString</key>
-	<string>rd_qc_utils version 1.2.2, Copyright rahji.com</string>
+	<string>rd_qc_utils version 1.2.3, Copyright rahji.com</string>
 	<key>CFBundleVersion</key>
-	<string>1.2.2</string>
+	<string>1.2.3</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.2.2</string>
+	<string>1.2.3</string>
 	<key>QCPlugInClasses</key>
 	<array>
 		<string>ScaleNumber</string>
