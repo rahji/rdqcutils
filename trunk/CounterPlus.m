@@ -12,7 +12,7 @@
 #import "CounterPlus.h"
 
 #define	kQCPlugIn_Name				@"Counter Plus"
-#define	kQCPlugIn_Description		@"Like the normal counter, but allows for optionally decrementing below zero.  You can also specify a starting number and an amount by which to increment or decrement.\n\nThe count continues even after stopping and starting the composition.\n\nhttp://code.google.com/p/rdqcutils/"
+#define	kQCPlugIn_Description		@"Like the normal counter, but allows for optionally decrementing below zero.  You can also specify a starting number and an amount by which to increment or decrement.\n\nhttp://code.google.com/p/rdqcutils/"
 
 @implementation CounterPlus
 
@@ -85,7 +85,6 @@
 {
 	if(self = [super init]) {
 		//Allocate any permanent resource required by the plug-in.
-        count = 0;
 	}
 	    
 	return self;
@@ -111,6 +110,8 @@
 {
 	//Called by Quartz Composer when rendering of the composition starts: perform any required setup for the plug-in.
 	//Return NO in case of fatal failure (this will prevent rendering of the composition to start).
+    count = 0;
+    firstExecution = TRUE;
 	return YES;
 }
 
@@ -135,13 +136,14 @@
     
     if (!allowNegatives && count < 0) { return NO; } // fail to render
     
-    if (self.inputReset) {
+    if (self.inputReset || firstExecution) {
         count = self.inputStart;
+        firstExecution = FALSE;
     } else if (self.inputIncreasing) {
         count += amount;
     } else if (self.inputDecreasing) {
-        //short circuit below - works like allowneg || (!allowneg && count>0)
-        if (allowNegatives || count > 0) count -= amount;
+        //short circuit below - works like allowneg || (!allowneg && count-amount>0)
+        if (allowNegatives || count-amount > 0) count -= amount;
     }
     
     self.outputCount = count;

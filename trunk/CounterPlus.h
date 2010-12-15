@@ -11,6 +11,7 @@
 @interface CounterPlus : QCPlugIn
 {
     double count;
+    BOOL firstExecution;
 }
 
 /*
