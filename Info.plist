@@ -27,6 +27,7 @@
 		<string>CSVImporter</string>
 		<string>TextFileImporter</string>
 		<string>CounterPlus</string>
+		<string>PointsDistance</string>
 	</array>
 </dict>
 </plist>
