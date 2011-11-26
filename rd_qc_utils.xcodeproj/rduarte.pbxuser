@@ -121,7 +121,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					730,
+					813,
 					60,
 					20,
 					48,
@@ -169,6 +169,21 @@
 			177F241E126DF3F000DABE60 = 177F241E126DF3F000DABE60 /* PBXTextBookmark */;
 			17A1A1E812A81B6900CE4696 = 17A1A1E812A81B6900CE4696 /* PBXTextBookmark */;
 			17EB1AC1148159B900421187 /* PlistBookmark */ = 17EB1AC1148159B900421187 /* PlistBookmark */;
+			17EB1ADC148161B300421187 /* XCBuildMessageTextBookmark */ = 17EB1ADC148161B300421187 /* XCBuildMessageTextBookmark */;
+			17EB1ADD148161B300421187 /* PBXTextBookmark */ = 17EB1ADD148161B300421187 /* PBXTextBookmark */;
+			17EB1AE6148161C800421187 /* XCBuildMessageTextBookmark */ = 17EB1AE6148161C800421187 /* XCBuildMessageTextBookmark */;
+			17EB1AE7148161C800421187 /* PBXTextBookmark */ = 17EB1AE7148161C800421187 /* PBXTextBookmark */;
+			17EB1AF91481627600421187 /* PBXTextBookmark */ = 17EB1AF91481627600421187 /* PBXTextBookmark */;
+			17EB1AFA1481627600421187 /* PBXTextBookmark */ = 17EB1AFA1481627600421187 /* PBXTextBookmark */;
+			17EB1AFB1481627600421187 /* PlistBookmark */ = 17EB1AFB1481627600421187 /* PlistBookmark */;
+			17EB1AFC1481627600421187 /* PBXTextBookmark */ = 17EB1AFC1481627600421187 /* PBXTextBookmark */;
+			17EB1AFD1481627600421187 /* PBXTextBookmark */ = 17EB1AFD1481627600421187 /* PBXTextBookmark */;
+			17EB1AFE1481627600421187 /* PBXTextBookmark */ = 17EB1AFE1481627600421187 /* PBXTextBookmark */;
+			17EB1AFF1481627600421187 /* PBXTextBookmark */ = 17EB1AFF1481627600421187 /* PBXTextBookmark */;
+			17EB1B001481627600421187 /* PBXTextBookmark */ = 17EB1B001481627600421187 /* PBXTextBookmark */;
+			17EB1B011481627600421187 /* PlistBookmark */ = 17EB1B011481627600421187 /* PlistBookmark */;
+			17EB1B031481627600421187 /* PlistBookmark */ = 17EB1B031481627600421187 /* PlistBookmark */;
+			17EB1B071481632200421187 /* PlistBookmark */ = 17EB1B071481632200421187 /* PlistBookmark */;
 			17F3D038126E3F5800747D3E = 17F3D038126E3F5800747D3E /* PBXTextBookmark */;
 			17F3D039126E3F5800747D3E = 17F3D039126E3F5800747D3E /* PBXTextBookmark */;
 			17FCC1A2127A855D005862DE = 17FCC1A2127A855D005862DE /* PBXTextBookmark */;
@@ -181,7 +196,7 @@
 	};
 	16AA5C440A7EEE7300888E31 /* rd_qc_utils_Prefix.pch */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1031, 432}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1031, 544}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 50}";
 		};
@@ -320,9 +335,9 @@
 	};
 	1727A474126D704400C0A9E9 /* CHCSVSupport.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1011, 608}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1031, 608}}";
 			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 1324}";
+			sepNavVisRange = "{0, 1327}";
 		};
 	};
 	1727A475126D704400C0A9E9 /* CHCSVSupport.m */ = {
@@ -390,9 +405,9 @@
 	};
 	1727A47E126D704400C0A9E9 /* CSVImporter.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1031, 448}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1031, 544}}";
 			sepNavSelRange = "{566, 12}";
-			sepNavVisRange = "{0, 601}";
+			sepNavVisRange = "{0, 602}";
 			sepNavWindowFrame = "{{15, 4}, {1176, 774}}";
 		};
 	};
@@ -657,16 +672,16 @@
 	};
 	17D47DA91263DE910017B42F /* SwapNumbers.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1031, 464}}";
-			sepNavSelRange = "{199, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {1031, 544}}";
+			sepNavSelRange = "{0, 648}";
 			sepNavVisRange = "{0, 648}";
 		};
 	};
 	17D47DAA1263DE910017B42F /* SwapNumbers.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1111, 2192}}";
-			sepNavSelRange = "{1764, 30}";
-			sepNavVisRange = "{1515, 461}";
+			sepNavIntBoundsRect = "{{0, 0}, {1111, 2208}}";
+			sepNavSelRange = "{0, 4713}";
+			sepNavVisRange = "{825, 1372}";
 		};
 	};
 	17EB1AC1148159B900421187 /* PlistBookmark */ = {
@@ -677,6 +692,189 @@
 		kPath = (
 		);
 		name = /Users/rduarte/svn/rdqcutils/Info.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	17EB1AD414815B5700421187 /* XYDistance.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1031, 544}}";
+			sepNavSelRange = "{476, 177}";
+			sepNavVisRange = "{0, 659}";
+		};
+	};
+	17EB1AD514815B5700421187 /* XYDistance.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1265, 2480}}";
+			sepNavSelRange = "{4341, 0}";
+			sepNavVisRange = "{3536, 1275}";
+		};
+	};
+	17EB1ADC148161B300421187 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Cannot find interface declaration for 'SwapNumbers'";
+		fRef = 17EB1AD514815B5700421187 /* XYDistance.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 100;
+		rType = 1;
+	};
+	17EB1ADD148161B300421187 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 17EB1AD514815B5700421187 /* XYDistance.m */;
+		name = "XYDistance.m: 101";
+		rLen = 39;
+		rLoc = 3214;
+		rType = 0;
+		vrLen = 335;
+		vrLoc = 3187;
+	};
+	17EB1AE6148161C800421187 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Too many arguments to function 'exp'";
+		fRef = 17EB1AD514815B5700421187 /* XYDistance.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 125;
+		rType = 1;
+	};
+	17EB1AE7148161C800421187 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 17EB1AD514815B5700421187 /* XYDistance.m */;
+		name = "XYDistance.m: 126";
+		rLen = 113;
+		rLoc = 4347;
+		rType = 0;
+		vrLen = 346;
+		vrLoc = 4192;
+	};
+	17EB1AF91481627600421187 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1727A474126D704400C0A9E9 /* CHCSVSupport.h */;
+		name = "CHCSVSupport.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1327;
+		vrLoc = 0;
+	};
+	17EB1AFA1481627600421187 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 16AA5C440A7EEE7300888E31 /* rd_qc_utils_Prefix.pch */;
+		name = "rd_qc_utils_Prefix.pch: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 50;
+		vrLoc = 0;
+	};
+	17EB1AFB1481627600421187 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D5B49B7048680CD000E48DA /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			QCPlugInClasses,
+			5,
+		);
+		name = /Users/rduarte/svn/rdqcutils/Info.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	17EB1AFC1481627600421187 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1727A47E126D704400C0A9E9 /* CSVImporter.h */;
+		name = "CSVImporter.h: 24";
+		rLen = 12;
+		rLoc = 566;
+		rType = 0;
+		vrLen = 602;
+		vrLoc = 0;
+	};
+	17EB1AFD1481627600421187 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 17D47DA91263DE910017B42F /* SwapNumbers.h */;
+		name = "SwapNumbers.h: 1";
+		rLen = 648;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 648;
+		vrLoc = 0;
+	};
+	17EB1AFE1481627600421187 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 17D47DAA1263DE910017B42F /* SwapNumbers.m */;
+		name = "SwapNumbers.m: 1";
+		rLen = 4713;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1372;
+		vrLoc = 825;
+	};
+	17EB1AFF1481627600421187 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 17EB1AD414815B5700421187 /* XYDistance.h */;
+		name = "XYDistance.h: 22";
+		rLen = 177;
+		rLoc = 476;
+		rType = 0;
+		vrLen = 659;
+		vrLoc = 0;
+	};
+	17EB1B001481627600421187 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 17EB1AD514815B5700421187 /* XYDistance.m */;
+		name = "XYDistance.m: 124";
+		rLen = 0;
+		rLoc = 4341;
+		rType = 0;
+		vrLen = 1275;
+		vrLoc = 3536;
+	};
+	17EB1B011481627600421187 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 17EB1B021481627600421187 /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/rduarte/svn/rdqcutils/build/Release/rd_qc_utils.plugin/Contents/Info.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	17EB1B021481627600421187 /* Info.plist */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = text.plist.xml;
+		name = Info.plist;
+		path = /Users/rduarte/svn/rdqcutils/build/Release/rd_qc_utils.plugin/Contents/Info.plist;
+		sourceTree = "<absolute>";
+	};
+	17EB1B031481627600421187 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 17EB1B041481627600421187 /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/rduarte/svn/rdqcutils/build/Release/rd_qc_utils.plugin/Contents/Info.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	17EB1B041481627600421187 /* Info.plist */ = {
+		isa = PBXFileReference;
+		name = Info.plist;
+		path = /Users/rduarte/svn/rdqcutils/build/Release/rd_qc_utils.plugin/Contents/Info.plist;
+		sourceTree = "<absolute>";
+	};
+	17EB1B071481632200421187 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 17EB1B021481627600421187 /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			QCPlugInClasses,
+			5,
+		);
+		name = /Users/rduarte/svn/rdqcutils/build/Release/rd_qc_utils.plugin/Contents/Info.plist;
 		rLen = 0;
 		rLoc = 9223372036854775807;
 	};

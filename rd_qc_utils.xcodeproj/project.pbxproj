@@ -35,6 +35,7 @@
 		174732A112A482F500613EE6 /* CounterPlus.m in Sources */ = {isa = PBXBuildFile; fileRef = 174732A012A482F500613EE6 /* CounterPlus.m */; };
 		1792EC4B126F94B500D36A87 /* ScaleNumberSettings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1792EC4A126F94B500D36A87 /* ScaleNumberSettings.xib */; };
 		17D47DAB1263DE910017B42F /* SwapNumbers.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D47DAA1263DE910017B42F /* SwapNumbers.m */; };
+		17EB1AD614815B5700421187 /* XYDistance.m in Sources */ = {isa = PBXBuildFile; fileRef = 17EB1AD514815B5700421187 /* XYDistance.m */; };
 		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +77,8 @@
 		1792EC4A126F94B500D36A87 /* ScaleNumberSettings.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScaleNumberSettings.xib; sourceTree = "<group>"; };
 		17D47DA91263DE910017B42F /* SwapNumbers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwapNumbers.h; sourceTree = "<group>"; };
 		17D47DAA1263DE910017B42F /* SwapNumbers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwapNumbers.m; sourceTree = "<group>"; };
+		17EB1AD414815B5700421187 /* XYDistance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYDistance.h; sourceTree = "<group>"; };
+		17EB1AD514815B5700421187 /* XYDistance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYDistance.m; sourceTree = "<group>"; };
 		8D5B49B6048680CD000E48DA /* rd_qc_utils.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rd_qc_utils.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -144,6 +147,8 @@
 				17232747127A70C500286F76 /* TextFileImporter.m */,
 				1727A47F126D704400C0A9E9 /* CSVImporter.m */,
 				17D47DA91263DE910017B42F /* SwapNumbers.h */,
+				17EB1AD414815B5700421187 /* XYDistance.h */,
+				17EB1AD514815B5700421187 /* XYDistance.m */,
 				1747329F12A482F500613EE6 /* CounterPlus.h */,
 				174732A012A482F500613EE6 /* CounterPlus.m */,
 				17D47DAA1263DE910017B42F /* SwapNumbers.m */,
@@ -261,6 +266,7 @@
 				1727A486126D704400C0A9E9 /* CSVImporter.m in Sources */,
 				17232748127A70C500286F76 /* TextFileImporter.m in Sources */,
 				174732A112A482F500613EE6 /* CounterPlus.m in Sources */,
+				17EB1AD614815B5700421187 /* XYDistance.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
