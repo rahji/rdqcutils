@@ -47,10 +47,15 @@
 	return nil;
 }
 
++ (NSArray*) sortedPropertyPortKeys
+{
+    return [NSArray arrayWithObjects:@"inputURL",@"inputUpdate",@"outputParsed",nil];
+}
+
 + (QCPlugInExecutionMode) executionMode
 {
 	//Return the execution mode of the plug-in: kQCPlugInExecutionModeProvider, kQCPlugInExecutionModeProcessor, or kQCPlugInExecutionModeConsumer.
-	return kQCPlugInExecutionModeProcessor;
+	return kQCPlugInExecutionModeProvider;
 }
 
 + (QCPlugInTimeMode) timeMode
@@ -114,7 +119,7 @@
         // NSString -> NSArray -> NSDictionary
         self.outputParsed = [[returnData CSVComponents] indexKeyedDictionary];
     }
-
+    
 	return YES;
 }
 
