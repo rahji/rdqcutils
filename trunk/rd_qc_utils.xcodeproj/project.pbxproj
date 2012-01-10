@@ -33,6 +33,9 @@
 		1727A485126D704400C0A9E9 /* CHCSVWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1727A47D126D704400C0A9E9 /* CHCSVWriter.m */; };
 		1727A486126D704400C0A9E9 /* CSVImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1727A47F126D704400C0A9E9 /* CSVImporter.m */; };
 		174732A112A482F500613EE6 /* CounterPlus.m in Sources */ = {isa = PBXBuildFile; fileRef = 174732A012A482F500613EE6 /* CounterPlus.m */; };
+		1755C90314AECB99009FD22C /* LRCImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1755C90214AECB99009FD22C /* LRCImporter.m */; };
+		177C867E14BC9BC90068CC45 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 177C867C14BC9BC90068CC45 /* RegexKitLite.m */; };
+		177C869014BCA32D0068CC45 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 177C868F14BCA32D0068CC45 /* libicucore.dylib */; };
 		1792EC4B126F94B500D36A87 /* ScaleNumberSettings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1792EC4A126F94B500D36A87 /* ScaleNumberSettings.xib */; };
 		17D47DAB1263DE910017B42F /* SwapNumbers.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D47DAA1263DE910017B42F /* SwapNumbers.m */; };
 		17EB1AD614815B5700421187 /* XYDistance.m in Sources */ = {isa = PBXBuildFile; fileRef = 17EB1AD514815B5700421187 /* XYDistance.m */; };
@@ -74,6 +77,11 @@
 		1727A47F126D704400C0A9E9 /* CSVImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSVImporter.m; sourceTree = "<group>"; };
 		1747329F12A482F500613EE6 /* CounterPlus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CounterPlus.h; sourceTree = "<group>"; };
 		174732A012A482F500613EE6 /* CounterPlus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CounterPlus.m; sourceTree = "<group>"; };
+		1755C90114AECB99009FD22C /* LRCImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRCImporter.h; sourceTree = "<group>"; };
+		1755C90214AECB99009FD22C /* LRCImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRCImporter.m; sourceTree = "<group>"; };
+		177C867C14BC9BC90068CC45 /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
+		177C867D14BC9BC90068CC45 /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
+		177C868F14BCA32D0068CC45 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		1792EC4A126F94B500D36A87 /* ScaleNumberSettings.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScaleNumberSettings.xib; sourceTree = "<group>"; };
 		17D47DA91263DE910017B42F /* SwapNumbers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwapNumbers.h; sourceTree = "<group>"; };
 		17D47DAA1263DE910017B42F /* SwapNumbers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwapNumbers.m; sourceTree = "<group>"; };
@@ -90,6 +98,7 @@
 			files = (
 				8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */,
 				16BA96310A7EB9AC001E4983 /* Quartz.framework in Frameworks */,
+				177C869014BCA32D0068CC45 /* libicucore.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +122,7 @@
 			children = (
 				16BA96300A7EB9AC001E4983 /* Quartz.framework */,
 				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
+				177C868F14BCA32D0068CC45 /* libicucore.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -129,6 +139,8 @@
 		08FB77AFFE84173DC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				177C867C14BC9BC90068CC45 /* RegexKitLite.m */,
+				177C867D14BC9BC90068CC45 /* RegexKitLite.h */,
 				1727A471126D704400C0A9E9 /* CHCSV.h */,
 				1727A472126D704400C0A9E9 /* NSString+CHCSVAdditions.h */,
 				1727A473126D704400C0A9E9 /* NSString+CHCSVAdditions.m */,
@@ -154,6 +166,8 @@
 				17D47DAA1263DE910017B42F /* SwapNumbers.m */,
 				16BA95400A7EB2EB001E4983 /* ScaleNumber.h */,
 				16BA95410A7EB2EB001E4983 /* ScaleNumber.m */,
+				1755C90114AECB99009FD22C /* LRCImporter.h */,
+				1755C90214AECB99009FD22C /* LRCImporter.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -267,6 +281,8 @@
 				17232748127A70C500286F76 /* TextFileImporter.m in Sources */,
 				174732A112A482F500613EE6 /* CounterPlus.m in Sources */,
 				17EB1AD614815B5700421187 /* XYDistance.m in Sources */,
+				1755C90314AECB99009FD22C /* LRCImporter.m in Sources */,
+				177C867E14BC9BC90068CC45 /* RegexKitLite.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

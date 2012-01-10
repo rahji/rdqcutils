@@ -46,10 +46,15 @@
 	return nil;
 }
 
++ (NSArray*) sortedPropertyPortKeys
+{
+    return [NSArray arrayWithObjects:@"inputURL",@"inputUpdate",@"outputStructure",nil];
+}
+
 + (QCPlugInExecutionMode) executionMode
 {
 	//Return the execution mode of the plug-in: kQCPlugInExecutionModeProvider, kQCPlugInExecutionModeProcessor, or kQCPlugInExecutionModeConsumer.
-	return kQCPlugInExecutionModeProcessor;
+	return kQCPlugInExecutionModeProvider;
 }
 
 + (QCPlugInTimeMode) timeMode

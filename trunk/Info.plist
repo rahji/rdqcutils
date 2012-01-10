@@ -28,6 +28,7 @@
 		<string>TextFileImporter</string>
 		<string>CounterPlus</string>
 		<string>PointsDistance</string>
+		<string>LRCImporter</string>
 	</array>
 </dict>
 </plist>
