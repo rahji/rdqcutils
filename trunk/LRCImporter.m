@@ -129,7 +129,7 @@
      */
     
     if ([self didValueForInputKeyChange:@"inputUpdate"] && self.inputUpdate) {
-    
+
         NSString *title = nil;
         NSString *artist = nil;
         NSString *album = nil;
@@ -189,7 +189,7 @@
         }
         
         self.outputStructure = output;
-        
+
     }
     
     return YES;
