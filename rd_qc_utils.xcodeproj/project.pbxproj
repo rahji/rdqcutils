@@ -36,6 +36,8 @@
 		1755C90314AECB99009FD22C /* LRCImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1755C90214AECB99009FD22C /* LRCImporter.m */; };
 		177C867E14BC9BC90068CC45 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 177C867C14BC9BC90068CC45 /* RegexKitLite.m */; };
 		177C869014BCA32D0068CC45 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 177C868F14BCA32D0068CC45 /* libicucore.dylib */; };
+		177C86F414BCCD4C0068CC45 /* SRTImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 177C86F314BCCD4C0068CC45 /* SRTImporter.m */; };
+		177C86FD14BFCE550068CC45 /* StringFromEventStructure.m in Sources */ = {isa = PBXBuildFile; fileRef = 177C86FC14BFCE550068CC45 /* StringFromEventStructure.m */; };
 		1792EC4B126F94B500D36A87 /* ScaleNumberSettings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1792EC4A126F94B500D36A87 /* ScaleNumberSettings.xib */; };
 		17D47DAB1263DE910017B42F /* SwapNumbers.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D47DAA1263DE910017B42F /* SwapNumbers.m */; };
 		17EB1AD614815B5700421187 /* XYDistance.m in Sources */ = {isa = PBXBuildFile; fileRef = 17EB1AD514815B5700421187 /* XYDistance.m */; };
@@ -82,6 +84,10 @@
 		177C867C14BC9BC90068CC45 /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
 		177C867D14BC9BC90068CC45 /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
 		177C868F14BCA32D0068CC45 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		177C86F214BCCD4C0068CC45 /* SRTImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRTImporter.h; sourceTree = "<group>"; };
+		177C86F314BCCD4C0068CC45 /* SRTImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRTImporter.m; sourceTree = "<group>"; };
+		177C86FB14BFCE550068CC45 /* StringFromEventStructure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringFromEventStructure.h; sourceTree = "<group>"; };
+		177C86FC14BFCE550068CC45 /* StringFromEventStructure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringFromEventStructure.m; sourceTree = "<group>"; };
 		1792EC4A126F94B500D36A87 /* ScaleNumberSettings.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScaleNumberSettings.xib; sourceTree = "<group>"; };
 		17D47DA91263DE910017B42F /* SwapNumbers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwapNumbers.h; sourceTree = "<group>"; };
 		17D47DAA1263DE910017B42F /* SwapNumbers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwapNumbers.m; sourceTree = "<group>"; };
@@ -167,6 +173,10 @@
 				16BA95400A7EB2EB001E4983 /* ScaleNumber.h */,
 				16BA95410A7EB2EB001E4983 /* ScaleNumber.m */,
 				1755C90114AECB99009FD22C /* LRCImporter.h */,
+				177C86F214BCCD4C0068CC45 /* SRTImporter.h */,
+				177C86FB14BFCE550068CC45 /* StringFromEventStructure.h */,
+				177C86FC14BFCE550068CC45 /* StringFromEventStructure.m */,
+				177C86F314BCCD4C0068CC45 /* SRTImporter.m */,
 				1755C90214AECB99009FD22C /* LRCImporter.m */,
 			);
 			name = Classes;
@@ -283,6 +293,8 @@
 				17EB1AD614815B5700421187 /* XYDistance.m in Sources */,
 				1755C90314AECB99009FD22C /* LRCImporter.m in Sources */,
 				177C867E14BC9BC90068CC45 /* RegexKitLite.m in Sources */,
+				177C86F414BCCD4C0068CC45 /* SRTImporter.m in Sources */,
+				177C86FD14BFCE550068CC45 /* StringFromEventStructure.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
