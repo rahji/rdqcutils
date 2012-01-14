@@ -3,8 +3,29 @@
 //  rd_qc_utils
 //
 //  Created by Rob Duarte on 10/28/10.
-//  Copyright (c) 2010 rahji.com. All rights reserved.
 //
+
+/**
+ Copyright 2010-2012 Rob Duarte
+ 
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+ 
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+ 
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ THE SOFTWARE.
+ **/
 
 /* It's highly recommended to use CGL macros instead of changing the current context for plug-ins that perform OpenGL rendering */
 #import <OpenGL/CGLMacro.h>
@@ -12,8 +33,12 @@
 #import "NSArray+Dictionary.h"
 
 #define	kQCPlugIn_Name			@"Text File Importer"
-#define	kQCPlugIn_Description	@"Imports a plain text file from a URL and outputs a structure containing one member per line.  Local files can be imported by specifying a file:// URL  (Remember that an absolute path will have 3 slashes at its start eg: file:///Users/bill/file.txt).\n\nThe structure's numerical indices are not necessarily in order. To retrieve the lines in order, use the structure keys and not the indices.\n\nThe import occurs every time the Update Signal input goes from LOW to HIGH.\n\nhttp://code.google.com/p/rdqcutils/"
-
+#define	kQCPlugIn_Description	@"Imports a plain text file from a URL and outputs a structure containing one member per line.  "\
+                                 "Local files can be imported by specifying a file:// URL  (Remember that an absolute path will have "\
+                                 "3 slashes at its start eg: file:///Users/bill/file.txt).\n\nThe structure's numerical indices are "\
+                                 "not necessarily in order. To retrieve the lines in order, use the structure keys and not the indices."\
+                                 "\n\nThe import occurs every time the Update Signal input goes from LOW to HIGH.\n\n"\
+                                 "http://code.google.com/p/rdqcutils/"
 
 @implementation TextFileImporter
 

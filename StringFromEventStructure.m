@@ -3,16 +3,42 @@
 //  rd_qc_utils
 //
 //  Created by Rob Duarte on 1/12/12.
-//  Copyright (c) 2012 rahji.com. All rights reserved.
 //
+
+/**
+ Copyright 2010-2012 Rob Duarte
+ 
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+ 
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+ 
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ THE SOFTWARE.
+ **/
 
 /* It's highly recommended to use CGL macros instead of changing the current context for plug-ins that perform OpenGL rendering */
 #import <OpenGL/CGLMacro.h>
 
 #import "StringFromEventStructure.h"
 
-#define	kQCPlugIn_Name				@"String from Event Structure"
-#define	kQCPlugIn_Description		@"Takes a structure with a timestamp (in seconds) as its keys - eg: from the LCR Importer or SRT Importer patches. Outputs the appropriate string for on the current time (from either the patch time or external timebase).\n\nhttp://code.google.com/p/rdqcutils/"
+#define	kQCPlugIn_Name				@"String from LRC/SRT Structure"
+#define	kQCPlugIn_Description		@"Takes the output structure from either the LCR Karaoke File Importer or SRT Subtitles File "\
+                                     "Importer patches and outputs the appropriate string for the current time, using either the "\
+                                     "patch time or external timebase. The order of the input structure must be exactly as output "\
+                                     "by the STR or LRC importer patch (ie: sorted descending order by start time).\n\nNote that SRT "\
+                                     "structures contain start and end times, where LRC structures contain only a start time. Both are "\
+                                     "handled by this patch.\n\nhttp://code.google.com/p/rdqcutils/"
 
 @implementation StringFromEventStructure
 
@@ -31,7 +57,7 @@
     
     if([key isEqualToString:@"inputStructure"])
         return [NSDictionary dictionaryWithObjectsAndKeys:
-                @"Event Structure", QCPortAttributeNameKey,
+                @"LRC/SRT Structure", QCPortAttributeNameKey,
                 nil];
     if([key isEqualToString:@"inputUpdate"])
         return [NSDictionary dictionaryWithObjectsAndKeys:
@@ -113,13 +139,11 @@
     if ([self didValueForInputKeyChange:@"inputUpdate"] && self.inputUpdate) {
         
         NSString *output = nil;
-        NSDictionary *tempStructure = self.inputStructure;
-        
-        NSSortDescriptor *reverseSort = [NSSortDescriptor sortDescriptorWithKey:@"self" ascending:NO];
+        NSArray *tempStructure = self.inputStructure;
 
-        for (NSNumber *key in [[tempStructure allKeys] sortedArrayUsingDescriptors:[NSArray arrayWithObject:reverseSort]]) {
-            if (time >= [key floatValue]) {
-                output = [tempStructure objectForKey:key];
+        for (id subStructure in tempStructure) {
+            if (time >= [[subStructure objectAtIndex:0] floatValue]) {
+                output = [subStructure objectAtIndex:1];
                 break;
             }
         }
