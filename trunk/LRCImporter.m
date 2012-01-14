@@ -3,17 +3,44 @@
 //  rd_qc_utils
 //
 //  Created by Rob Duarte on 12/30/11.
-//  Copyright 2011 rahji.com. All rights reserved.
 //
+
+/**
+ Copyright 2010-2012 Rob Duarte
+ 
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+ 
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+ 
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ THE SOFTWARE.
+ **/
 
 /* It's highly recommended to use CGL macros instead of changing the current context for plug-ins that perform OpenGL rendering */
 #import <OpenGL/CGLMacro.h>
 #import "LRCImporter.h"
 #import "RegexKitLite.h"
 
-#define	kQCPlugIn_Name			@"LRC File Importer"
-#define	kQCPlugIn_Description	@"Parses a plain text LRC (karaoke) file from a URL and outputs some metadata and a structure of its lyrics (with number of seconds as its key). An offset (in ms) can be specified as an input or in the file itself. A change to the offset input is only recognized when the update input is toggled.\n\nLocal files can be imported by specifying a file:// URL  (Remember that an absolute path will have 3 slashes at its start eg: file:///Users/bill/song.lrc).\n\nThe import occurs every time the Update Signal input goes from LOW to HIGH.\n\nhttp://code.google.com/p/rdqcutils/"
-
+#define	kQCPlugIn_Name			@"LRC Karaoke File Importer"
+#define	kQCPlugIn_Description	@"Parses a plain text LRC karaoke lyrics file from a URL and outputs some metadata along with "\
+                                 "a structure of its lyrics. Each item of the structure is a sub-structure with 'start' and 'string' keys. "\
+                                 "The structure is sorted in descending order by the 'start' key, which is required by the String From "\
+                                 "Event Structure patch.\n\nAn offset (in ms) can be specified as an input or in the file itself. A change "\
+                                 "to the offset input is only recognized when the update input is toggled.\n\nLocal files can be imported "\
+                                 "by specifying a file:// URL  (Remember that an absolute path will have 3 slashes at its start eg: "\
+                                 "file:///Users/bill/song.lrc).\n\nThe import occurs every time the Update Signal input goes from LOW to "\
+                                 "HIGH.\n\nhttp://code.google.com/p/rdqcutils/"
 
 @implementation LRCImporter
 
@@ -134,15 +161,15 @@
         NSString *artist = nil;
         NSString *album = nil;
         float offsetMillis = self.inputOffsetMs;
-        
-        NSMutableDictionary *output = [NSMutableDictionary dictionary];
-        
+                
         NSStringEncoding encoding;
         NSString *returnString = [NSString stringWithContentsOfURL:[NSURL URLWithString:self.inputURL] 
                                                       usedEncoding:&encoding error:nil];
         
         NSArray *linesArray = [returnString componentsSeparatedByCharactersInSet:[NSCharacterSet newlineCharacterSet]];
         NSString *regexString  = @"\\[\\d\\d:\\d\\d\\.\\d\\d\\]";
+
+        NSMutableArray *output = [NSMutableArray arrayWithCapacity:[linesArray count]];
         
         NSString *lineString;
         for (lineString in linesArray) {
@@ -180,15 +207,26 @@
             for (NSString *matchedString in matches) {
                 float secs;
                 secs = [[matchedString substringWithRange:NSMakeRange(1,2)] floatValue] * 60 // from mm part of [mm:ss.mm]
-                + [[matchedString substringWithRange:NSMakeRange(4,5)] floatValue] // from ss.mm part of [mm:ss.mm]
-                + offsetMillis / 1000; // offset could be zero (if no offset: tag in file and no value for offset input)
-                [output setObject:[lineString substringFromIndex:lastMatch.location+lastMatch.length]
-                           forKey:[NSNumber numberWithFloat:secs]];
+                    + [[matchedString substringWithRange:NSMakeRange(4,5)] floatValue] // from ss.mm part of [mm:ss.mm]
+                    + offsetMillis / 1000; // offset could be zero (if no offset: tag in file and no value for offset input)
+                [output addObject:[NSArray arrayWithObjects:
+                                            [NSNumber numberWithFloat:secs],
+                                            [lineString substringFromIndex:lastMatch.location+lastMatch.length],
+                                            nil
+                                         ]];
             }
             
         }
         
-        self.outputStructure = output;
+        if (output != nil) {
+            self.outputStructure = [output sortedArrayUsingComparator:^(id a, id b) {
+                NSNumber *first = [(NSArray*)a objectAtIndex:0];
+                NSNumber *second = [(NSArray*)b objectAtIndex:0];
+                return [second compare:first];
+            }];
+        } else {
+            self.outputStructure = nil;
+        }
 
     }
     
