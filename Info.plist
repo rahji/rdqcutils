@@ -30,6 +30,7 @@
 		<string>XYDistance</string>
 		<string>LRCImporter</string>
 		<string>StringFromEventStructure</string>
+		<string>SRTImporter</string>
 	</array>
 </dict>
 </plist>

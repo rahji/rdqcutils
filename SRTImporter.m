@@ -1,8 +1,8 @@
 //
-//  LRCImporter.m
+//  SRTImporter.m
 //  rd_qc_utils
 //
-//  Created by Rob Duarte on 12/30/11.
+//  Created by Rob Duarte on 1/13/12.
 //
 
 /**
@@ -29,23 +29,23 @@
 
 /* It's highly recommended to use CGL macros instead of changing the current context for plug-ins that perform OpenGL rendering */
 #import <OpenGL/CGLMacro.h>
-#import "LRCImporter.h"
+#import "SRTImporter.h"
 #import "RegexKitLite.h"
 
-#define	kQCPlugIn_Name			@"LRC Karaoke File Importer"
-#define	kQCPlugIn_Description	@"Parses a plain text LRC karaoke lyrics file from a URL and outputs some metadata along with "\
-                                 "a structure of its lyrics. Each item of the structure is a sub-structure with two items: start time and "\
-                                 "the lyric. The structure is sorted in descending order by start time, which is required by the String From"\
-                                 " LRC/SRT Structure patch.\n\nAn offset (in ms) can be specified as an input or in the file itself. A "\
-                                 "change to the offset input is only recognized when the update input is toggled.\n\nLocal files can be "\
-                                 "imported by specifying a file:// URL  (Remember that an absolute path will have 3 slashes at its start eg:"\
-                                 " file:///Users/bill/song.lrc).\n\nThe import occurs every time the Update Signal input goes from LOW to "\
-                                 "HIGH.\n\nhttp://code.google.com/p/rdqcutils/"
+#define	kQCPlugIn_Name			@"SRT Subtitles File Importer"
+#define	kQCPlugIn_Description	@"Parses a plain text SRT (SubRip) subtitles file from a URL and outputs a structure."\
+                                "Each item of the structure is a sub-structure with 3 items: start time, subtitle, end time. "\
+                                "The structure is sorted in descending order by start time, which is required by the String From"\
+                                " LRC/SRT Structure patch.\n\nAn offset (in ms) can be specified as an input - any changes to the offset "\
+                                "are only recognized when the update input is toggled.\n\nLocal files can be "\
+                                "imported by specifying a file:// URL  (Remember that an absolute path will have 3 slashes at its start eg:"\
+                                " file:///Users/bill/subs.srt).\n\nThe import occurs every time the Update Signal input goes from LOW to "\
+                                "HIGH.\n\nhttp://code.google.com/p/rdqcutils/"
 
-@implementation LRCImporter
+@implementation SRTImporter
 
 //Here you need to declare the input / output properties as dynamic as Quartz Composer will handle their implementation
-@dynamic inputUpdate, inputURL, inputOffsetMs, outputStructure, outputTitle, outputAlbum, outputArtist;
+@dynamic inputUpdate, inputURL, inputOffsetMs, outputStructure;
 
 + (NSDictionary*) attributes
 {
@@ -58,7 +58,7 @@
 	//Specify the optional attributes for property based ports (QCPortAttributeNameKey, QCPortAttributeDefaultValueKey...).
     if([key isEqualToString:@"inputURL"])
         return [NSDictionary dictionaryWithObjectsAndKeys:
-                @"LRC File URL", QCPortAttributeNameKey,
+                @"SRT File URL", QCPortAttributeNameKey,
                 nil];
     if([key isEqualToString:@"inputUpdate"])
         return [NSDictionary dictionaryWithObjectsAndKeys:
@@ -72,19 +72,7 @@
                 nil];
     if([key isEqualToString:@"outputStructure"])
         return [NSDictionary dictionaryWithObjectsAndKeys:
-                @"Lyrics", QCPortAttributeNameKey,
-                nil];
-    if([key isEqualToString:@"outputTitle"])
-        return [NSDictionary dictionaryWithObjectsAndKeys:
-                @"Song Title", QCPortAttributeNameKey,
-                nil];
-    if([key isEqualToString:@"outputAlbum"])
-        return [NSDictionary dictionaryWithObjectsAndKeys:
-                @"Album Title", QCPortAttributeNameKey,
-                nil];
-    if([key isEqualToString:@"outputArtist"])
-        return [NSDictionary dictionaryWithObjectsAndKeys:
-                @"Artist Name", QCPortAttributeNameKey,
+                @"Subtitles", QCPortAttributeNameKey,
                 nil];
     
 	return nil;
@@ -92,7 +80,7 @@
 
 + (NSArray*) sortedPropertyPortKeys
 {
-    return [NSArray arrayWithObjects:@"inputURL",@"inputUpdate",@"inputOffsetMs",@"outputStructure",@"outputTitle",@"outputAlbum",@"outputArtist",nil];
+    return [NSArray arrayWithObjects:@"inputURL",@"inputUpdate",@"inputOffsetMs",@"outputStructure",nil];
 }
 
 + (QCPlugInExecutionMode) executionMode
@@ -130,7 +118,7 @@
 @end
 
 
-@implementation LRCImporter (Execution)
+@implementation SRTImporter (Execution)
 
 - (BOOL) startExecution:(id<QCPlugInContext>)context
 {
@@ -156,71 +144,71 @@
      */
     
     if ([self didValueForInputKeyChange:@"inputUpdate"] && self.inputUpdate) {
-
-        NSString *title = nil;
-        NSString *artist = nil;
-        NSString *album = nil;
+        
         float offsetMillis = self.inputOffsetMs;
-                
+        
         NSStringEncoding encoding;
         NSError *err = nil;
         NSString *returnString = [NSString stringWithContentsOfURL:[NSURL URLWithString:self.inputURL] 
                                                       usedEncoding:&encoding error:&err];
         if (err != nil) {
-            NSLog(@"LRC Importer file open error: %@", [err localizedDescription]);
+            NSLog(@"SRT Importer file open error: %@", [err localizedDescription]);
             return YES;
         }
-        
+                
         NSArray *linesArray = [returnString componentsSeparatedByCharactersInSet:[NSCharacterSet newlineCharacterSet]];
-        NSString *regexString  = @"\\[\\d\\d:\\d\\d\\.\\d\\d\\]";
 
-        NSMutableArray *output = [NSMutableArray arrayWithCapacity:[linesArray count]];
+        NSArray *split = nil;
+        NSString *splitRegex = @"(,|:|\\s+-->\\s+)";
+        NSMutableArray *output = [NSMutableArray arrayWithCapacity:[linesArray count]/3];
+        NSMutableString *subtitleString = [NSMutableString stringWithCapacity:20];
         
-        NSString *lineString;
-        for (lineString in linesArray) {
-            
-            lineString = [lineString stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-            lineString = [lineString substringToIndex:[lineString length]]; // get rid of trailing bracket
-            
-            if (title == nil && [lineString hasPrefix:@"[ti:"])
-                self.outputTitle = [NSString stringWithString:
-                                     [lineString substringWithRange:NSMakeRange(4,[lineString length]-5)] ];
-            
-            if (artist == nil && [lineString hasPrefix:@"[ar:"])
-                self.outputArtist = [NSString stringWithString:
-                                     [lineString substringWithRange:NSMakeRange(4,[lineString length]-5)] ];
-            
-            if (album == nil && [lineString hasPrefix:@"[al:"])
-                self.outputAlbum = [NSString stringWithString:
-                                     [lineString substringWithRange:NSMakeRange(4,[lineString length]-5)] ];
-            
-            // if there is no offset yet (from neither the offsetMs input nor the offset: file tag)...
-            if (offsetMillis == 0 && [lineString hasPrefix:@"[offset:"])
-                // may have + or - in front of the number, which floatValue is okay with
-                offsetMillis = [[lineString substringWithRange:NSMakeRange(8,[lineString length]-9)] floatValue];
-            
-            NSArray *matches = nil;
-            matches = [lineString componentsMatchedByRegex:regexString]; // find ALL timestamps
-            if (matches == nil || [matches count] == 0) {
-                // don't bother with the rest, since no timestamp was found...
-                continue;
+        BOOL inEntry = FALSE;
+        float startTime;
+        float endTime;
+        
+        id lastLine = [linesArray lastObject];
+        
+        for (id lineString in linesArray) {
+
+            if (!inEntry && [[lineString stringByTrimmingCharactersInSet:[NSCharacterSet decimalDigitCharacterSet]] isEqualToString:@""]) {
+                // the line contains a number only - this is the start of a new entry
+                [subtitleString setString:@""];
+                startTime = 0;
+                endTime = 0;                
+                inEntry = TRUE;
             }
-            
-            // find the location of the right-most timestamp
-            NSRange lastMatch = [lineString rangeOfString:[matches lastObject] options:NSBackwardsSearch]; 
-            
-            for (NSString *matchedString in matches) {
-                float secs;
-                secs = [[matchedString substringWithRange:NSMakeRange(1,2)] floatValue] * 60 // from mm part of [mm:ss.mm]
-                    + [[matchedString substringWithRange:NSMakeRange(4,5)] floatValue] // from ss.mm part of [mm:ss.mm]
-                    + offsetMillis / 1000; // offset could be zero (if no offset: tag in file and no value for offset input)
+        
+            else if (inEntry && [lineString isNotEqualTo:@""]) { 
+                // we're in an entry and it's not a blank line - see what kind of line it is, timespan or subtitle
+                split = [lineString componentsSeparatedByRegex:splitRegex];
+                if ([split count] == 15) { 
+                    // this is a timespan - store the values
+                    startTime = [[split objectAtIndex:0] floatValue]*3600 + [[split objectAtIndex:2] floatValue]*60 
+                        + [[split objectAtIndex:4] floatValue] + [[split objectAtIndex:6] floatValue]/1000;
+                    endTime = [[split objectAtIndex:8] floatValue]*3600 + [[split objectAtIndex:10] floatValue]*60
+                        + [[split objectAtIndex:12] floatValue] + [[split objectAtIndex:14] floatValue]/1000;
+                } else {
+                    // this is a subtitle line - add it to our running multi-line string
+                    [subtitleString appendFormat:@"%@\n",lineString];
+                }
+            }
+             
+            // next condition might evaluate to true if the current line is not empty (ie: it was handled by the above conditional)
+            // but we're at the end of the file.  it also takes place if we hit a blank line. either signals the end of an entry.
+            if (inEntry && ([lineString isEqualToString:@""] || lineString == lastLine)) { 
+                // we've hit the end of the entry (or end of file) - store the whole entry as a single element in the output array
+                startTime += (offsetMillis/1000); // adjust for offset from input port
+                endTime += (offsetMillis/1000); // adjust for offset from input port
                 [output addObject:[NSArray arrayWithObjects:
-                                            [NSNumber numberWithFloat:secs],
-                                            [lineString substringFromIndex:lastMatch.location+lastMatch.length],
-                                            nil
-                                         ]];
+                                   [NSNumber numberWithFloat:startTime],
+                                   [subtitleString stringByTrimmingCharactersInSet:[NSCharacterSet newlineCharacterSet]], // del last /n
+                                   [NSNumber numberWithFloat:endTime],
+                                   nil
+                                   ]];
+                inEntry = FALSE; // reset the flag and the variables for the next entry
             }
-            
+                    
         }
         
         if (output != nil) {
@@ -232,7 +220,7 @@
         } else {
             self.outputStructure = nil;
         }
-
+        
     }
     
     return YES;

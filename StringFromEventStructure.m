@@ -143,12 +143,17 @@
 
         for (id subStructure in tempStructure) {
             if (time >= [[subStructure objectAtIndex:0] floatValue]) {
-                output = [subStructure objectAtIndex:1];
+                if ( [subStructure count] == 2 ||  // ie: it only contains a start time and string (LRC file, not SRT)
+                    ([subStructure count] == 3 && time <= [[subStructure objectAtIndex:2] floatValue]) ) {
+                    output = [subStructure objectAtIndex:1];
+                } else {
+                    output = @"";
+                }
                 break;
             }
         }
         
-        if (output != nil) self.outputString = output;
+        self.outputString = output;
     
     }
     
