@@ -137,8 +137,14 @@
     
     if ([self didValueForInputKeyChange:@"inputUpdate"] && self.inputUpdate) {
         NSStringEncoding encoding;
+        NSError *err = nil;
         NSString *returnData = [NSString stringWithContentsOfURL:[NSURL URLWithString:self.inputURL] 
                                                 usedEncoding:&encoding error:nil];
+        if (err != nil) {
+            NSLog(@"CSV Importer file open error: %@", [err localizedDescription]);
+            return YES;
+        }
+        
         // NSString -> NSArray -> NSDictionary
         self.outputParsed = [[returnData CSVComponents] indexKeyedDictionary];
     }

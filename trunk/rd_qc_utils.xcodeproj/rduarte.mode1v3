@@ -283,7 +283,7 @@
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {198, 684}}</string>
+							<string>{{0, 168}, {198, 684}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -320,7 +320,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>SRTImporter.m</string>
+								<string>SRTImporter.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -328,11 +328,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>SRTImporter.m</string>
+										<string>SRTImporter.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>177C88AE14C1702E0068CC45</string>
+										<string>177C89BF14C2CEE70068CC45</string>
 										<key>history</key>
 										<array>
 											<string>17560B6012663D910099AD56</string>
@@ -342,9 +342,7 @@
 											<string>17F3D039126E3F5800747D3E</string>
 											<string>17232776127A751100286F76</string>
 											<string>17232778127A751100286F76</string>
-											<string>17FCC1A2127A855D005862DE</string>
 											<string>174D61AC1287767F00D2375C</string>
-											<string>174D61AD1287767F00D2375C</string>
 											<string>174732C012A4877700613EE6</string>
 											<string>17EB1AF91481627600421187</string>
 											<string>17EB1AFA1481627600421187</string>
@@ -355,30 +353,32 @@
 											<string>177C876714C09C5B0068CC45</string>
 											<string>177C876E14C09C5B0068CC45</string>
 											<string>177C87EF14C10C8F0068CC45</string>
-											<string>177C888714C16F550068CC45</string>
 											<string>177C888814C16F550068CC45</string>
 											<string>177C888914C16F550068CC45</string>
-											<string>177C888A14C16F550068CC45</string>
 											<string>177C888B14C16F550068CC45</string>
 											<string>177C888C14C16F550068CC45</string>
 											<string>177C888D14C16F550068CC45</string>
 											<string>177C888E14C16F550068CC45</string>
-											<string>177C888F14C16F550068CC45</string>
-											<string>177C889014C16F550068CC45</string>
 											<string>177C889114C16F550068CC45</string>
 											<string>177C889214C16F550068CC45</string>
 											<string>177C889314C16F550068CC45</string>
-											<string>177C889414C16F550068CC45</string>
 											<string>177C889514C16F550068CC45</string>
 											<string>177C889614C16F550068CC45</string>
 											<string>177C889714C16F550068CC45</string>
 											<string>177C889814C16F550068CC45</string>
-											<string>177C889914C16F550068CC45</string>
-											<string>177C889A14C16F550068CC45</string>
-											<string>177C889B14C16F550068CC45</string>
-											<string>177C88AB14C1702E0068CC45</string>
-											<string>177C88AC14C1702E0068CC45</string>
-											<string>177C88AD14C1702E0068CC45</string>
+											<string>177C88C114C21AB10068CC45</string>
+											<string>177C88C214C21AB10068CC45</string>
+											<string>177C88C414C21AB10068CC45</string>
+											<string>177C88DC14C261900068CC45</string>
+											<string>177C88DD14C261900068CC45</string>
+											<string>177C88E814C265500068CC45</string>
+											<string>177C891514C291D30068CC45</string>
+											<string>177C892414C2950D0068CC45</string>
+											<string>177C895414C2A8AF0068CC45</string>
+											<string>177C896C14C2AEF30068CC45</string>
+											<string>177C897414C2BFDA0068CC45</string>
+											<string>177C89BE14C2CEE70068CC45</string>
+											<string>177C893014C29B0C0068CC45</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -576,6 +576,9 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>177C897914C2BFDA0068CC45</string>
+		<string>177C897A14C2BFDA0068CC45</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>176473C5126DFFA8009EBC31</string>
 		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>1CD10A99069EF8BA00B06720</string>
@@ -599,12 +602,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>SRTImporter.m</string>
+								<string>CSVImporter.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -621,8 +626,6 @@
 							<string>180pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -946,7 +949,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>170BC25D12B88A8D00DF2140</string>
+				<string>177C897714C2BFDA0068CC45</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>
@@ -956,7 +959,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>
@@ -1010,7 +1013,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1C78EAB2065D492600B07095</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>SRTImporter.h</string>
+								<string>SRTImporter.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
