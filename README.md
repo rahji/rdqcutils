@@ -22,3 +22,12 @@ Install rdqcutils by unzipping the file and dropping the resulting plugin into y
 If you already have an older (pre-1.2) version of the plugin, please note that I changed the name of the plugin slightly (added underscores and removed the 
 version number from the plugin filename). If you have an older version (before 1.2) you'll need to 
 remove the old one before installing this newest version.
+
+## Screenshots
+
+##### Patches contained in the plugin:
+![screenshot1](rd_qc_utils-screenshot-1.3.png "rdqcutils screenshot")
+
+##### The settings panel of the Scale Number patch:
+![screenshot2](rdqcutils_ScaleNumber_settings_screenshot_1.0.png "rdqcutils scale number settings screenshot")
+
